@@ -1,0 +1,72 @@
+{
+  "unbalanced-brace": {
+    "text": "波括弧はコマンドの引数やグループの範囲を表します。閉じ忘れがあると、その後の文章まで引数として読まれることがあります。表示したい波括弧には\\{と\\}を使います。断片の前後に対応する括弧がある場合は、文書全体で確認してください。",
+    "reviewed": true,
+    "sourceTopicIds": [
+      "error-braces"
+    ],
+    "updatedAt": "2026-10-10",
+    "referenceIds": [
+      "overleaf-commands",
+      "overleaf-brackets",
+      "overleaf-errors"
+    ],
+    "verificationMethod": "primary-source-comparison",
+    "humanReview": "not-performed"
+  },
+  "environment-mismatch": {
+    "text": "環境は同じ名前のbeginとendで囲みます。入れ子にした場合は、内側を先に閉じます。貼り付けた断片だけでは前後の環境がわからないため、閉じ忘れや開始のないendは注意として扱います。",
+    "reviewed": true,
+    "sourceTopicIds": [
+      "error-environments"
+    ],
+    "updatedAt": "2026-10-10",
+    "referenceIds": [
+      "overleaf-environments"
+    ],
+    "verificationMethod": "primary-source-comparison",
+    "humanReview": "not-performed"
+  },
+  "outside-math-subscript": {
+    "text": "_は数式内で下付き文字を作る記号です。式なら$x_1$のように数式モードで囲みます。ファイル名などの本文ならfile\\_nameのようにエスケープします。数式の記述と文字の表示で書き方が異なります。",
+    "reviewed": true,
+    "sourceTopicIds": [
+      "math-subscript",
+      "layout-special"
+    ],
+    "updatedAt": "2026-10-10",
+    "referenceIds": [
+      "overleaf-scripts",
+      "overleaf-errors"
+    ],
+    "verificationMethod": "primary-source-comparison",
+    "humanReview": "not-performed"
+  },
+  "outside-math-superscript": {
+    "text": "^は数式内で上付き文字を作ります。式全体を$x^2$のように囲み、複数文字の指数はx^{n+1}のように波括弧でまとめます。指数だけを囲むのではなく、式全体を数式モードにします。",
+    "reviewed": true,
+    "sourceTopicIds": [
+      "math-superscript"
+    ],
+    "updatedAt": "2026-10-10",
+    "referenceIds": [
+      "overleaf-scripts",
+      "overleaf-math"
+    ],
+    "verificationMethod": "primary-source-comparison",
+    "humanReview": "not-performed"
+  },
+  "math-delimiters": {
+    "text": "$…$、\\(…\\)、\\[…\\]はそれぞれ同じ種類の開始・終了を使います。数式環境内にさらに区切りを入れないでください。断片の外側に区切りがある場合や独自マクロで切り替える場合は、この簡易診断だけでは判断できません。",
+    "reviewed": true,
+    "sourceTopicIds": [
+      "error-math-mode"
+    ],
+    "updatedAt": "2026-10-10",
+    "referenceIds": [
+      "overleaf-math"
+    ],
+    "verificationMethod": "primary-source-comparison",
+    "humanReview": "not-performed"
+  }
+}

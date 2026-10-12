@@ -1,1 +1,13 @@
-
+node_modules/
+dist/
+coverage/
+test-results/
+test-results-llm-demo/
+test-results-llm/
+playwright-report/
+.env
+.env.*
+!.env.example
+*.local
+*.tsbuildinfo
+*.log

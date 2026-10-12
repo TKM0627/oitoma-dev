@@ -1,0 +1,16 @@
+[
+  {
+    "id": "lualatex",
+    "title": "LuaLaTeX",
+    "description": "新しく日本語文書を始めるときのおすすめ。jlreqとLuaTeX-jaで日本語を扱います。",
+    "instructions": ["新規プロジェクトのmain.texに、下のコードをUTF-8で保存します。", "Overleafでは設定のCompilerをLuaLaTeXに切り替えます。手元の環境ではlualatex main.texを実行します。", "相互参照の番号が未確定なら再コンパイルします。授業指定のクラスやフォント設定がある場合は、その指定を優先します。"],
+    "referenceIds": ["jlreq-guide", "overleaf-japanese", "overleaf-compiler"]
+  },
+  {
+    "id": "uplatex",
+    "title": "upLaTeX + dvipdfmx",
+    "description": "授業の既存テンプレートで指定されている場合に選びます。LuaLaTeXとは設定が異なります。",
+    "instructions": ["新規文書なら下のjlreqの例を利用できます。既存テンプレートはクラスやパッケージを変更する前に授業の指示を確認します。", "OverleafではCompilerをLaTeXにし、プロジェクト直下のlatexmkrcに下の設定を保存します。既存設定がある場合は置き換えず確認します。", "手元ではuplatex main.texを必要に応じて複数回実行し、dvipdfmx main.dviで変換します。日本語用パッケージが使えるTeX環境が必要です。"],
+    "referenceIds": ["jlreq-guide", "overleaf-japanese", "overleaf-compiler"]
+  }
+]

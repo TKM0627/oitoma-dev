@@ -1,0 +1,10 @@
+.search-types { display: flex; flex-wrap: wrap; gap: .5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+.search-types button { gap: .65rem; background: white; min-height: 44px; }
+.unified-result, .unified-topic { border-bottom: 1px solid var(--border); padding-block: 1.1rem; }
+.result-kind { display: inline-block; font-size: .75rem; color: var(--muted); margin-bottom: .35rem; }
+.unified-result h3 { margin-bottom: .3rem; }
+.unified-result p { font-size: .9rem; margin-bottom: .3rem; }
+.unified-topic .topic-card { border: 0; padding: 0; }
+.more-results { margin-block: 1.25rem; }
+#results-heading { scroll-margin-top: 1rem; }
+#results-heading:focus { outline: 2px solid var(--link); outline-offset: 4px; }

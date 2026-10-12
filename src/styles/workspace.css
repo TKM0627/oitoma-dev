@@ -1,0 +1,32 @@
+.workspace-form { margin-top: 1.5rem; }
+.workspace-form label { display: block; margin-bottom: .4rem; }
+.workspace-form textarea { display: block; width: 100%; min-width: 0; padding: .75rem; background: #fff; border: 1px solid var(--border-strong); border-radius: 2px; resize: vertical; line-height: 1.7; }
+.workspace-form #workspace-question { font-family: inherit; }
+.workspace-form input[type="file"] { display: block; width: 100%; min-width: 0; margin-block: .5rem; font-size: .85rem; }
+.workspace-form input::file-selector-button { font: inherit; background: var(--subtle); border: 1px solid var(--border-strong); border-radius: 2px; padding: .4rem .65rem; margin-right: .65rem; }
+.workspace-form select { max-width: 100%; padding: .4rem; background: #fff; border: 1px solid var(--border-strong); }
+.workspace-form .small { margin-block: .5rem; }
+.workspace-actions, .workspace-links { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; align-items: center; }
+.workspace-input-section { border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 1.3rem; }
+.workspace-actions { margin-top: 1.25rem; }
+.workspace-results { border-top: 2px solid var(--border-strong); padding-top: 1.25rem; margin-top: 2rem; }
+.workspace-results > h2:focus { outline: 2px solid var(--link); outline-offset: 4px; }
+.workspace-results-body > section { margin-top: 1.5rem; }
+.workspace-result-nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+.workspace-result-nav button { background: var(--paper); }
+.workspace-result-summary { color: var(--muted); }
+.workspace-results-body h3[tabindex]:focus { outline: 2px solid var(--link); outline-offset: 4px; }
+.workspace-answer { padding-block: 1rem; border-bottom: 1px solid var(--border); }
+.workspace-answer > .small:first-child { margin-bottom: .25rem; }
+.workspace-answer h3 { font-size: 1.05rem; }
+.workspace-answer .package-notice { margin-block: .75rem; }
+.workspace-links { font-size: .85rem; }
+.workspace-findings { padding-left: 1.4rem; }
+.workspace-finding { padding-block: .8rem; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.workspace-finding h4 { font-size: 1rem; margin-block: .25rem .5rem; }
+.workspace-finding .small { margin-bottom: .25rem; }
+.workspace-context { margin-block: .75rem; padding: .7rem; border-left: 2px solid var(--border); background: var(--subtle); white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.7; font-size: .85rem; }
+.workspace-stale { padding: .75rem; border-left: 3px solid var(--border-strong); background: var(--subtle); }
+.workspace-related { padding-top: 1rem; margin-top: 1.5rem; border-top: 1px solid var(--border); }
+.workspace-page .formula-preview { margin-bottom: 1rem; }
+@media (max-width: 520px) { .workspace-form input[type="file"] { font-size: .75rem; } .workspace-form .disclosure-body { min-width: 0; } }

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "emacs-operations",
+    "title": "GNU Emacs Manual：保存・モード確認・TeX実行",
+    "publisher": "GNU Project",
+    "url": "https://www.gnu.org/software/emacs/manual/html_mono/emacs.html",
+    "scope": "保存、describe-mode、標準TeXモードのtex-file。公開マニュアルの該当説明を照合。大学PCの実設定は未確認。",
+    "sourceType": "official-documentation",
+    "checkedAt": "2026-10-12",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "auctex-commands",
+    "title": "AUCTeX Manual：文書のコマンド実行",
+    "publisher": "GNU Project / AUCTeX",
+    "url": "https://www.gnu.org/software/auctex/manual/auctex/Starting-a-Command.html",
+    "scope": "TeX-command-masterと既定のC-c C-c。公開資料の説明を照合。利用できるエンジンや大学固有の設定は未確認。",
+    "sourceType": "official-documentation",
+    "checkedAt": "2026-10-12",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "web2c-options",
+    "title": "Web2c Manual：実行オプション",
+    "publisher": "TeX Users Group",
+    "url": "https://tug.org/texinfohtml/web2c.html",
+    "scope": "file-line-error形式とno-shell-escape。固定スターター向けのコマンド例であり、安全な実行環境の保証ではない。",
+    "sourceType": "maintainer-documentation",
+    "checkedAt": "2026-10-12",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "texfaq-alignment",
+    "title": "The TeX FAQ：表の列数と区切り",
+    "publisher": "The TeX FAQ curators",
+    "url": "https://texfaq.org/FAQ-altabcr",
+    "scope": "Extra alignment tab、列数と行末の区切りの確認。列定義の自動修正や原因の断定は行わない。",
+    "sourceType": "maintainer-documentation",
+    "checkedAt": "2026-10-12",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "texfaq-linebreak",
+    "title": "The TeX FAQ：改行できる行がない",
+    "publisher": "The TeX FAQ curators",
+    "url": "https://texfaq.org/FAQ-noline",
+    "scope": "There is no line here to endと段落外の改行指定。入力を自動修正しない。",
+    "sourceType": "maintainer-documentation",
+    "checkedAt": "2026-10-12",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "texfaq-overfull",
+    "title": "The TeX FAQ：行のはみ出し",
+    "publisher": "The TeX FAQ curators",
+    "url": "https://texfaq.org/FAQ-overfull",
+    "scope": "Overfull boxの警告、PDFの見た目と文章の見直し。組版パラメータの自動変更は行わない。",
+    "sourceType": "maintainer-documentation",
+    "checkedAt": "2026-10-12",
+    "usage": "link-and-original-explanation"
+  }
+]

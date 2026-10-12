@@ -1,0 +1,202 @@
+[
+  {
+    "topicId": "math-inline",
+    "phrases": [
+      "文章の途中に式を入れたい",
+      "本文中に数式を入れたい"
+    ]
+  },
+  {
+    "topicId": "math-display",
+    "phrases": [
+      "式を独立した行にしたい",
+      "数式を中央に置きたい"
+    ]
+  },
+  {
+    "topicId": "math-subscript",
+    "phrases": [
+      "小さい数字を右下に付けたい",
+      "右下に文字を付けたい"
+    ]
+  },
+  {
+    "topicId": "math-superscript",
+    "phrases": [
+      "二乗を書きたい",
+      "べき乗を書きたい",
+      "右上に数字を付けたい"
+    ]
+  },
+  {
+    "topicId": "math-fraction",
+    "phrases": [
+      "分子と分母を書きたい",
+      "割り算を縦に書きたい",
+      "分数の線を引きたい"
+    ]
+  },
+  {
+    "topicId": "math-root",
+    "phrases": [
+      "ルートを書きたい",
+      "根号を書きたい"
+    ]
+  },
+  {
+    "topicId": "math-sum",
+    "phrases": [
+      "足し合わせる記号",
+      "総和を書きたい"
+    ]
+  },
+  {
+    "topicId": "math-integral",
+    "phrases": [
+      "積分の上下の範囲",
+      "積分を書きたい"
+    ]
+  },
+  {
+    "topicId": "math-matrix",
+    "phrases": [
+      "行列に括弧を付けたい",
+      "行列の括弧を変えたい"
+    ]
+  },
+  {
+    "topicId": "math-cases",
+    "phrases": [
+      "条件ごとに式を分けたい",
+      "場合分けを書きたい"
+    ]
+  },
+  {
+    "topicId": "math-aligned",
+    "phrases": [
+      "イコールをそろえたい",
+      "イコールを揃えたい",
+      "等号の位置を揃えたい",
+      "式を縦に並べたい",
+      "数式を複数行にしたい"
+    ]
+  },
+  {
+    "topicId": "math-brackets",
+    "phrases": [
+      "括弧を大きくしたい",
+      "式に合わせて括弧を伸ばしたい"
+    ]
+  },
+  {
+    "topicId": "math-text",
+    "phrases": [
+      "数式の中に文章を入れたい",
+      "数式の中に文字を入れたい"
+    ]
+  },
+  {
+    "topicId": "table-basic",
+    "phrases": [
+      "表を書きたい",
+      "表の列がずれる",
+      "表の列数が合わない",
+      "Extra alignment tab has been changed to"
+    ]
+  },
+  {
+    "topicId": "table-rules",
+    "phrases": [
+      "表に横線を引きたい",
+      "表の罫線を変えたい"
+    ]
+  },
+  {
+    "topicId": "figure-image",
+    "phrases": [
+      "画像を貼りたい",
+      "写真を入れたい",
+      "画像の大きさを変えたい",
+      "画像が見つからない"
+    ]
+  },
+  {
+    "topicId": "figure-float",
+    "phrases": [
+      "画像が変な場所に出る",
+      "図が次のページに行く",
+      "図の位置を変えたい"
+    ]
+  },
+  {
+    "topicId": "layout-sections",
+    "phrases": [
+      "見出しを付けたい",
+      "章や節を作りたい"
+    ]
+  },
+  {
+    "topicId": "layout-lists",
+    "phrases": [
+      "箇条書きにしたい",
+      "番号付きのリストを作りたい"
+    ]
+  },
+  {
+    "topicId": "layout-emphasis",
+    "phrases": [
+      "文字を太くしたい",
+      "文字を斜体にしたい"
+    ]
+  },
+  {
+    "topicId": "layout-paragraph",
+    "phrases": [
+      "段落を分けたい",
+      "文章を改行したい",
+      "There's no line here to end",
+      "行がはみ出す",
+      "Overfull"
+    ]
+  },
+  {
+    "topicId": "citation-reference",
+    "phrases": [
+      "番号がはてなになる",
+      "参照が??になる",
+      "図の番号を参照したい",
+      "表の番号を参照したい"
+    ]
+  },
+  {
+    "topicId": "citation-bibliography",
+    "phrases": [
+      "参考文献を書きたい",
+      "文献の引用が出ない"
+    ]
+  },
+  {
+    "topicId": "layout-special",
+    "phrases": [
+      "パーセントを書きたい",
+      "アンダースコアを書きたい",
+      "Misplaced alignment tab character"
+    ]
+  },
+  {
+    "topicId": "japanese-document",
+    "phrases": [
+      "日本語レポートを書きたい",
+      "授業のテンプレートを使いたい"
+    ]
+  },
+  {
+    "topicId": "japanese-engine",
+    "phrases": [
+      "PDFが作れない",
+      "command not found",
+      "コマンドが見つからない",
+      "コマンドが認識されない"
+    ]
+  }
+]

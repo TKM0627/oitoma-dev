@@ -1,0 +1,372 @@
+[
+  {
+    "id": "overleaf-math",
+    "title": "数式の記述と数式モード",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Mathematical_expressions",
+    "checkedAt": "2026-10-10",
+    "scope": "文中・独立した数式モード、区切り、基本的な数式記号。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-scripts",
+    "title": "下付き文字・上付き文字",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Subscripts_and_superscripts",
+    "checkedAt": "2026-10-10",
+    "scope": "下付き・上付き文字、複数文字の波括弧、総和・積分の上下限。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-matrix",
+    "title": "行列の環境",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Matrices",
+    "checkedAt": "2026-10-10",
+    "scope": "amsmathの行列環境、括弧の種類、行・列の区切り。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-aligned",
+    "title": "amsmathで数式を揃える",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath",
+    "checkedAt": "2026-10-10",
+    "scope": "amsmathによる複数行数式と整列位置。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-tables",
+    "title": "表の作成",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Tables",
+    "checkedAt": "2026-10-10",
+    "scope": "tabularの列指定、行末、罫線、tableのcaption・label・ref。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-images",
+    "title": "画像の挿入",
+    "publisher": "Overleaf",
+    "url": "https://docs.overleaf.com/writing-and-editing/inserting-images/latex-code-for-including-images-in-your-document",
+    "checkedAt": "2026-10-10",
+    "scope": "graphicxとincludegraphics、画像ファイルとパス。画像の転載はしません。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-sections",
+    "title": "節と文書構造",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Sections_and_chapters",
+    "checkedAt": "2026-10-10",
+    "scope": "文書クラスによる見出し階層、section・subsection、番号なしの見出し。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-lists",
+    "title": "箇条書き",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Lists",
+    "checkedAt": "2026-10-10",
+    "scope": "itemize・enumerate、item、入れ子の箇条書き。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-bib",
+    "title": "BibTeXによる参考文献管理",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Bibliography_management_with_bibtex",
+    "checkedAt": "2026-10-10",
+    "scope": "thebibliographyとBibTeX、cite、参考文献の処理。学内の引用規則を定める資料ではありません。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-lines",
+    "title": "改行と空白",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Line_breaks_and_blank_spaces",
+    "checkedAt": "2026-10-10",
+    "scope": "空行による段落、ソース上の改行、改行と空白のコマンド。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-errors",
+    "title": "LaTeXコンパイルエラーの調べ方",
+    "publisher": "Overleaf",
+    "url": "https://docs.overleaf.com/troubleshooting-and-support/fixing-latex-errors",
+    "checkedAt": "2026-10-10",
+    "scope": "コンパイルエラーの切り分け、未エスケープ文字や括弧不足の確認。アプリの診断規則を保証する資料ではありません。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-fractions",
+    "title": "分数と二項係数",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Fractions_and_Binomials",
+    "checkedAt": "2026-10-10",
+    "scope": "fracの分子・分母、文中と独立した数式の分数表示。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-crossref",
+    "title": "キャプションと相互参照",
+    "publisher": "Overleaf",
+    "url": "https://docs.overleaf.com/writing-and-editing/inserting-images/captioning-and-referencing-figures",
+    "checkedAt": "2026-10-10",
+    "scope": "図のcaption・label・ref、番号参照と再コンパイル。節の参照は別の見出し資料も参照します。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-styling",
+    "title": "文字の強調・太字・コメント（LaTeX入門）",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes",
+    "checkedAt": "2026-10-10",
+    "scope": "Bold, italics and underlining節のtextbf・textit・emph。Adding comments節のコメント。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "katex-functions",
+    "title": "KaTeXが対応する構文",
+    "publisher": "KaTeX",
+    "url": "https://katex.org/docs/supported",
+    "checkedAt": "2026-10-10",
+    "scope": "KaTeXが扱う関数・記号・数式表示の対応範囲。TeX文書全体の有効性を示す資料ではありません。",
+    "sourceType": "official-documentation",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "jlreq-guide",
+    "title": "jlreqの公式日本語ガイド",
+    "publisher": "jlreq開発者",
+    "url": "https://github.com/abenori/jlreq/blob/master/README-ja.md",
+    "checkedAt": "2026-10-10",
+    "scope": "jlreqのエンジン指定、LuaLaTeX/upLaTeX、paper・fontsizeのクラスオプション。",
+    "sourceType": "maintainer-documentation",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-japanese",
+    "title": "日本語文書とLaTeXエンジン",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Japanese",
+    "checkedAt": "2026-10-10",
+    "scope": "日本語の組版環境、jlreq、LuaLaTeX、pLaTeX/upLaTeX用latexmkrcの設定例。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-compiler",
+    "title": "Compilerの選択方法",
+    "publisher": "Overleaf",
+    "url": "https://docs.overleaf.com/getting-started/recompiling-your-project/selecting-a-tex-live-version-and-latex-compiler",
+    "checkedAt": "2026-10-10",
+    "scope": "OverleafのCompiler設定。エンジンと文書クラスの互換性は別資料も確認します。",
+    "sourceType": "official-documentation",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-brackets",
+    "title": "括弧の種類と大きさ",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Brackets_and_Parentheses",
+    "checkedAt": "2026-10-10",
+    "scope": "left/rightの対応、表示用の波括弧、見えない区切り。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-operators",
+    "title": "数式の関数名・演算子",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Operators",
+    "checkedAt": "2026-10-10",
+    "scope": "sin・logなどの標準演算子と、amsmathによる演算子の定義。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-spacing",
+    "title": "数式内の空白",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Spacing_in_math_mode",
+    "checkedAt": "2026-10-10",
+    "scope": "数式用の空白コマンドと演算子周りの空き。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-commands",
+    "title": "コマンドと引数",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Commands",
+    "checkedAt": "2026-10-10",
+    "scope": "コマンドの引数を波括弧で囲む基本構文。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-environments",
+    "title": "begin/endと環境",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/Environments",
+    "checkedAt": "2026-10-10",
+    "scope": "同じ環境名のbegin/end、環境の基本的な使い方。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "amsmath-guide",
+    "title": "amsmathの公式ユーザーガイド（PDF）",
+    "publisher": "LaTeX Project / AMS",
+    "url": "https://www.latex-project.org/help/documentation/amsldoc.pdf",
+    "checkedAt": "2026-10-12",
+    "scope": "第3節の数式環境・空行の禁止、第3.7節のaligned・gathered、第4.1節の行列、第5節のoperatorname、第6節のtext。パッケージやガイド全文は収録しません。",
+    "sourceType": "maintainer-documentation",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-introduction",
+    "title": "LaTeX入門：特殊文字の表示（PDF）",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1.pdf",
+    "checkedAt": "2026-10-10",
+    "scope": "Typesetting Text: Caveats（PDFの9ページ目）のパーセント・アンパサンド・ハッシュ・ドル記号のエスケープ。教材・画像・演習問題全体は収録しません。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-setup",
+    "title": "Learn LaTeX：LaTeXを使用する",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-02",
+    "checkedAt": "2026-10-10",
+    "scope": "TeXシステムとエディタの役割、TeX Live、日本語文書、提出先の指定を確認する方針。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-document",
+    "title": "Learn LaTeX：文書構造",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-03",
+    "checkedAt": "2026-10-10",
+    "scope": ".texファイルとコンパイル、プリアンブルと本文、ログと出力ファイル。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-structure",
+    "title": "Learn LaTeX：論理的な文書構造",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-04",
+    "checkedAt": "2026-10-12",
+    "scope": "見出しや箇条書きによる論理構造と、内容に応じたマークアップ。レポートの構成は本アプリの例です。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-graphics",
+    "title": "Learn LaTeX：グラフィックスの挿入",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-07",
+    "checkedAt": "2026-10-10",
+    "scope": "graphicx、includegraphics、幅の指定、figure・caption、フロートの配置候補。画像は収録しません。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-tables",
+    "title": "Learn LaTeX：表組み",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-08",
+    "checkedAt": "2026-10-10",
+    "scope": "tabularの列指定、列と行の区切り。収録例の測定値は架空です。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-crossref",
+    "title": "Learn LaTeX：相互参照",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-09",
+    "checkedAt": "2026-10-12",
+    "scope": "label/ref、ラベルを置く位置、補助ファイル、参照解決のための再コンパイル。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-math",
+    "title": "Learn LaTeX：数式",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-10",
+    "checkedAt": "2026-10-12",
+    "scope": "文中と独立した数式、数式モードの区切り、添字、数式内の空白。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-bibliography",
+    "title": "Learn LaTeX：参考文献の引用",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-12",
+    "checkedAt": "2026-10-12",
+    "scope": ".bibの書誌情報とキー、BibTeX/pBibTeX/Biberと再コンパイル。授業の引用規則を定める資料ではありません。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "learnlatex-errors",
+    "title": "Learn LaTeX：エラーへの対処",
+    "publisher": "Learn LaTeX制作チーム",
+    "url": "https://www.learnlatex.org/ja/lesson-15",
+    "checkedAt": "2026-10-12",
+    "scope": "実行環境とTeXのエラーの違い、ログの報告位置と原因の違い、波括弧、ファイル未検出、数式中の空行。アプリの診断精度を保証する資料ではありません。",
+    "sourceType": "project-tutorial",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "emacs-tex-mode",
+    "title": "GNU Emacs Manual：TeX Mode",
+    "publisher": "GNU Project",
+    "url": "https://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html",
+    "checkedAt": "2026-10-10",
+    "scope": "Emacs標準のTeXモードと、追加パッケージAUCTeXの区別。大学PCの設定や操作を確認した資料ではありません。",
+    "sourceType": "official-documentation",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "texlive-guide",
+    "title": "The TeX Live Guide（英語）",
+    "publisher": "TeX Users Group / TeX Live",
+    "url": "https://tug.org/texlive/doc/texlive-en/texlive-en.html",
+    "checkedAt": "2026-10-10",
+    "scope": "第3.4.1節のPATH、第3.5節の導入後の確認、第6節のWindows向け説明。大学PCの導入状況は未確認です。",
+    "sourceType": "maintainer-documentation",
+    "usage": "link-and-original-explanation"
+  },
+  {
+    "id": "overleaf-symbols",
+    "title": "ギリシャ文字・数学記号の一覧",
+    "publisher": "Overleaf",
+    "url": "https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols",
+    "checkedAt": "2026-10-11",
+    "scope": "ギリシャ文字のコマンドとラテン文字による代用、別字形、基本的な関係・集合・矢印の記号。標準的な数式モード用の一覧作成に参照。",
+    "sourceType": "service-tutorial",
+    "usage": "link-and-original-explanation"
+  }
+]

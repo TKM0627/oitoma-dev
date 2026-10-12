@@ -1,0 +1,22 @@
+.llm-paste label { display: block; font-weight: 600; margin-bottom: .4rem; }
+.llm-composer textarea { display: block; width: 100%; min-width: 0; padding: .75rem; border: 1px solid var(--border-strong); border-radius: 2px; resize: vertical; line-height: 1.7; }
+.llm-composer #llm-question { font-family: inherit; }
+.llm-file-input { display: none; }
+.llm-actions, .llm-attachments { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: center; margin-top: .75rem; }
+.llm-submit { margin-left: auto; padding-inline: 1.5rem; }
+.llm-submit:not(:disabled) { background: var(--link); border-color: var(--link); color: white; }
+.llm-submit:not(:disabled):hover { background: #163c56; }
+.llm-composer > .disclosure { margin-block: .75rem 0; }
+.llm-composer > .disclosure > summary { font-size: .85rem; }
+.llm-composer #llm-privacy { margin-top: .75rem; }
+.llm-attachments > span { display: inline-flex; gap: .5rem; align-items: center; max-width: 100%; overflow-wrap: anywhere; font-size: .85rem; }
+.llm-attachments button { min-height: 32px; padding: .1rem .5rem; }
+.llm-paste textarea { margin-bottom: 1rem; }
+.llm-composer select { padding: .3rem; max-width: 100%; }
+.llm-result { border-top: 1px solid var(--border); margin-top: 1.5rem; padding-top: 1rem; }
+.llm-result-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .75rem; }
+.llm-result-header h2 { margin-bottom: 0; }
+.llm-answer { white-space: pre-wrap; overflow-wrap: anywhere; }
+.llm-result .code-block { margin-block: 1rem; }
+.llm-result h2:focus { outline: 2px solid var(--link); outline-offset: 4px; }
+.llm-page { max-width: 840px; }

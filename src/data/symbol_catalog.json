@@ -1,0 +1,896 @@
+[
+  {
+    "id": "greek-lower",
+    "title": "ギリシャ文字：小文字",
+    "description": "通常の小文字。オミクロンはラテン文字の o を使います。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "alpha",
+        "code": "\\alpha",
+        "glyph": "α",
+        "name": "アルファ",
+        "aliases": [
+          "alpha"
+        ]
+      },
+      {
+        "id": "beta",
+        "code": "\\beta",
+        "glyph": "β",
+        "name": "ベータ",
+        "aliases": [
+          "beta"
+        ]
+      },
+      {
+        "id": "gamma",
+        "code": "\\gamma",
+        "glyph": "γ",
+        "name": "ガンマ",
+        "aliases": [
+          "gamma"
+        ]
+      },
+      {
+        "id": "delta",
+        "code": "\\delta",
+        "glyph": "δ",
+        "name": "デルタ",
+        "aliases": [
+          "delta"
+        ]
+      },
+      {
+        "id": "epsilon",
+        "code": "\\epsilon",
+        "glyph": "ϵ",
+        "name": "イプシロン",
+        "aliases": [
+          "epsilon",
+          "エプシロン"
+        ]
+      },
+      {
+        "id": "zeta",
+        "code": "\\zeta",
+        "glyph": "ζ",
+        "name": "ゼータ",
+        "aliases": [
+          "zeta"
+        ]
+      },
+      {
+        "id": "eta",
+        "code": "\\eta",
+        "glyph": "η",
+        "name": "イータ",
+        "aliases": [
+          "eta"
+        ]
+      },
+      {
+        "id": "theta",
+        "code": "\\theta",
+        "glyph": "θ",
+        "name": "シータ",
+        "aliases": [
+          "theta",
+          "テータ"
+        ]
+      },
+      {
+        "id": "iota",
+        "code": "\\iota",
+        "glyph": "ι",
+        "name": "イオタ",
+        "aliases": [
+          "iota",
+          "イオータ"
+        ]
+      },
+      {
+        "id": "kappa",
+        "code": "\\kappa",
+        "glyph": "κ",
+        "name": "カッパ",
+        "aliases": [
+          "kappa"
+        ]
+      },
+      {
+        "id": "lambda",
+        "code": "\\lambda",
+        "glyph": "λ",
+        "name": "ラムダ",
+        "aliases": [
+          "lambda"
+        ]
+      },
+      {
+        "id": "mu",
+        "code": "\\mu",
+        "glyph": "μ",
+        "name": "ミュー",
+        "aliases": [
+          "mu"
+        ]
+      },
+      {
+        "id": "nu",
+        "code": "\\nu",
+        "glyph": "ν",
+        "name": "ニュー",
+        "aliases": [
+          "nu"
+        ]
+      },
+      {
+        "id": "xi",
+        "code": "\\xi",
+        "glyph": "ξ",
+        "name": "クサイ",
+        "aliases": [
+          "xi",
+          "クシー"
+        ]
+      },
+      {
+        "id": "omicron",
+        "code": "o",
+        "glyph": "o",
+        "name": "オミクロン",
+        "aliases": [
+          "omicron"
+        ]
+      },
+      {
+        "id": "pi",
+        "code": "\\pi",
+        "glyph": "π",
+        "name": "パイ",
+        "aliases": [
+          "pi"
+        ]
+      },
+      {
+        "id": "rho",
+        "code": "\\rho",
+        "glyph": "ρ",
+        "name": "ロー",
+        "aliases": [
+          "rho"
+        ]
+      },
+      {
+        "id": "sigma",
+        "code": "\\sigma",
+        "glyph": "σ",
+        "name": "シグマ",
+        "aliases": [
+          "sigma"
+        ]
+      },
+      {
+        "id": "tau",
+        "code": "\\tau",
+        "glyph": "τ",
+        "name": "タウ",
+        "aliases": [
+          "tau"
+        ]
+      },
+      {
+        "id": "upsilon",
+        "code": "\\upsilon",
+        "glyph": "υ",
+        "name": "ウプシロン",
+        "aliases": [
+          "upsilon",
+          "ユプシロン"
+        ]
+      },
+      {
+        "id": "phi",
+        "code": "\\phi",
+        "glyph": "ϕ",
+        "name": "ファイ",
+        "aliases": [
+          "phi",
+          "フィー"
+        ]
+      },
+      {
+        "id": "chi",
+        "code": "\\chi",
+        "glyph": "χ",
+        "name": "カイ",
+        "aliases": [
+          "chi",
+          "キー"
+        ]
+      },
+      {
+        "id": "psi",
+        "code": "\\psi",
+        "glyph": "ψ",
+        "name": "プサイ",
+        "aliases": [
+          "psi",
+          "プシー"
+        ]
+      },
+      {
+        "id": "omega",
+        "code": "\\omega",
+        "glyph": "ω",
+        "name": "オメガ",
+        "aliases": [
+          "omega"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "greek-upper",
+    "title": "ギリシャ文字：大文字のコマンド",
+    "description": "コマンドの先頭を大文字にします。小文字のコマンドとは区別されます。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "upper-gamma",
+        "code": "\\Gamma",
+        "glyph": "Γ",
+        "name": "ガンマ（大文字）",
+        "aliases": [
+          "Gamma"
+        ]
+      },
+      {
+        "id": "upper-delta",
+        "code": "\\Delta",
+        "glyph": "Δ",
+        "name": "デルタ（大文字）",
+        "aliases": [
+          "Delta"
+        ]
+      },
+      {
+        "id": "upper-theta",
+        "code": "\\Theta",
+        "glyph": "Θ",
+        "name": "シータ（大文字）",
+        "aliases": [
+          "Theta",
+          "テータ"
+        ]
+      },
+      {
+        "id": "upper-lambda",
+        "code": "\\Lambda",
+        "glyph": "Λ",
+        "name": "ラムダ（大文字）",
+        "aliases": [
+          "Lambda"
+        ]
+      },
+      {
+        "id": "upper-xi",
+        "code": "\\Xi",
+        "glyph": "Ξ",
+        "name": "クサイ（大文字）",
+        "aliases": [
+          "Xi",
+          "クシー"
+        ]
+      },
+      {
+        "id": "upper-pi",
+        "code": "\\Pi",
+        "glyph": "Π",
+        "name": "パイ（大文字）",
+        "aliases": [
+          "Pi"
+        ]
+      },
+      {
+        "id": "upper-sigma",
+        "code": "\\Sigma",
+        "glyph": "Σ",
+        "name": "シグマ（大文字）",
+        "aliases": [
+          "Sigma"
+        ]
+      },
+      {
+        "id": "upper-upsilon",
+        "code": "\\Upsilon",
+        "glyph": "Υ",
+        "name": "ウプシロン（大文字）",
+        "aliases": [
+          "Upsilon",
+          "ユプシロン"
+        ]
+      },
+      {
+        "id": "upper-phi",
+        "code": "\\Phi",
+        "glyph": "Φ",
+        "name": "ファイ（大文字）",
+        "aliases": [
+          "Phi",
+          "フィー"
+        ]
+      },
+      {
+        "id": "upper-psi",
+        "code": "\\Psi",
+        "glyph": "Ψ",
+        "name": "プサイ（大文字）",
+        "aliases": [
+          "Psi",
+          "プシー"
+        ]
+      },
+      {
+        "id": "upper-omega",
+        "code": "\\Omega",
+        "glyph": "Ω",
+        "name": "オメガ（大文字）",
+        "aliases": [
+          "Omega"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "greek-latin",
+    "title": "ギリシャ文字：大文字をラテン文字で書く",
+    "description": "標準的なLaTeXでは、形が共通の大文字を下のラテン文字で代用します。A などは数式の設定により斜体で表示されます。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "latin-alpha",
+        "code": "A",
+        "glyph": "A",
+        "name": "アルファ（大文字）",
+        "aliases": [
+          "alpha",
+          "A"
+        ]
+      },
+      {
+        "id": "latin-beta",
+        "code": "B",
+        "glyph": "B",
+        "name": "ベータ（大文字）",
+        "aliases": [
+          "beta",
+          "B"
+        ]
+      },
+      {
+        "id": "latin-epsilon",
+        "code": "E",
+        "glyph": "E",
+        "name": "イプシロン（大文字）",
+        "aliases": [
+          "epsilon",
+          "E",
+          "エプシロン"
+        ]
+      },
+      {
+        "id": "latin-zeta",
+        "code": "Z",
+        "glyph": "Z",
+        "name": "ゼータ（大文字）",
+        "aliases": [
+          "zeta",
+          "Z"
+        ]
+      },
+      {
+        "id": "latin-eta",
+        "code": "H",
+        "glyph": "H",
+        "name": "イータ（大文字）",
+        "aliases": [
+          "eta",
+          "H"
+        ]
+      },
+      {
+        "id": "latin-iota",
+        "code": "I",
+        "glyph": "I",
+        "name": "イオタ（大文字）",
+        "aliases": [
+          "iota",
+          "I",
+          "イオータ"
+        ]
+      },
+      {
+        "id": "latin-kappa",
+        "code": "K",
+        "glyph": "K",
+        "name": "カッパ（大文字）",
+        "aliases": [
+          "kappa",
+          "K"
+        ]
+      },
+      {
+        "id": "latin-mu",
+        "code": "M",
+        "glyph": "M",
+        "name": "ミュー（大文字）",
+        "aliases": [
+          "mu",
+          "M"
+        ]
+      },
+      {
+        "id": "latin-nu",
+        "code": "N",
+        "glyph": "N",
+        "name": "ニュー（大文字）",
+        "aliases": [
+          "nu",
+          "N"
+        ]
+      },
+      {
+        "id": "latin-omicron",
+        "code": "O",
+        "glyph": "O",
+        "name": "オミクロン（大文字）",
+        "aliases": [
+          "omicron",
+          "O"
+        ]
+      },
+      {
+        "id": "latin-rho",
+        "code": "P",
+        "glyph": "P",
+        "name": "ロー（大文字）",
+        "aliases": [
+          "rho",
+          "P"
+        ]
+      },
+      {
+        "id": "latin-tau",
+        "code": "T",
+        "glyph": "T",
+        "name": "タウ（大文字）",
+        "aliases": [
+          "tau",
+          "T"
+        ]
+      },
+      {
+        "id": "latin-chi",
+        "code": "X",
+        "glyph": "X",
+        "name": "カイ（大文字）",
+        "aliases": [
+          "chi",
+          "X",
+          "キー"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "greek-variants",
+    "title": "ギリシャ文字：別の字形",
+    "description": "epsilon・phi などには別の字形があります。ここでは形を見分ける目安を示しています。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "varepsilon",
+        "code": "\\varepsilon",
+        "glyph": "ε",
+        "name": "イプシロン（別字形）",
+        "aliases": [
+          "epsilon",
+          "エプシロン"
+        ]
+      },
+      {
+        "id": "vartheta",
+        "code": "\\vartheta",
+        "glyph": "ϑ",
+        "name": "シータ（別字形）",
+        "aliases": [
+          "theta",
+          "テータ"
+        ]
+      },
+      {
+        "id": "varpi",
+        "code": "\\varpi",
+        "glyph": "ϖ",
+        "name": "パイ（別字形）",
+        "aliases": [
+          "pi"
+        ]
+      },
+      {
+        "id": "varrho",
+        "code": "\\varrho",
+        "glyph": "ϱ",
+        "name": "ロー（別字形）",
+        "aliases": [
+          "rho"
+        ]
+      },
+      {
+        "id": "varsigma",
+        "code": "\\varsigma",
+        "glyph": "ς",
+        "name": "シグマ（別字形）",
+        "aliases": [
+          "sigma"
+        ]
+      },
+      {
+        "id": "varphi",
+        "code": "\\varphi",
+        "glyph": "φ",
+        "name": "ファイ（別字形）",
+        "aliases": [
+          "phi",
+          "フィー"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "comparisons",
+    "title": "等号・大小・近似",
+    "description": "値の比較や近似に使う、よく使う記号です。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "equals",
+        "code": "=",
+        "glyph": "=",
+        "name": "等しい",
+        "aliases": [
+          "equal"
+        ]
+      },
+      {
+        "id": "less",
+        "code": "<",
+        "glyph": "<",
+        "name": "より小さい",
+        "aliases": [
+          "less"
+        ]
+      },
+      {
+        "id": "greater",
+        "code": ">",
+        "glyph": ">",
+        "name": "より大きい",
+        "aliases": [
+          "greater"
+        ]
+      },
+      {
+        "id": "leq",
+        "code": "\\leq",
+        "glyph": "≤",
+        "name": "以下",
+        "aliases": [
+          "less equal"
+        ]
+      },
+      {
+        "id": "geq",
+        "code": "\\geq",
+        "glyph": "≥",
+        "name": "以上",
+        "aliases": [
+          "greater equal"
+        ]
+      },
+      {
+        "id": "neq",
+        "code": "\\neq",
+        "glyph": "≠",
+        "name": "等しくない",
+        "aliases": [
+          "not equal"
+        ]
+      },
+      {
+        "id": "approx",
+        "code": "\\approx",
+        "glyph": "≈",
+        "name": "およそ等しい",
+        "aliases": [
+          "approximately"
+        ]
+      },
+      {
+        "id": "equiv",
+        "code": "\\equiv",
+        "glyph": "≡",
+        "name": "恒等・合同",
+        "aliases": [
+          "equivalent"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sets",
+    "title": "集合",
+    "description": "所属・包含・和集合・共通部分などの記号です。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "in",
+        "code": "\\in",
+        "glyph": "∈",
+        "name": "属する",
+        "aliases": [
+          "belongs"
+        ]
+      },
+      {
+        "id": "notin",
+        "code": "\\notin",
+        "glyph": "∉",
+        "name": "属さない",
+        "aliases": [
+          "not belongs"
+        ]
+      },
+      {
+        "id": "subset",
+        "code": "\\subset",
+        "glyph": "⊂",
+        "name": "含まれる",
+        "aliases": [
+          "subset"
+        ]
+      },
+      {
+        "id": "subseteq",
+        "code": "\\subseteq",
+        "glyph": "⊆",
+        "name": "含まれる（等号付き）",
+        "aliases": [
+          "subset equal"
+        ]
+      },
+      {
+        "id": "supset",
+        "code": "\\supset",
+        "glyph": "⊃",
+        "name": "含む",
+        "aliases": [
+          "superset"
+        ]
+      },
+      {
+        "id": "cup",
+        "code": "\\cup",
+        "glyph": "∪",
+        "name": "和集合",
+        "aliases": [
+          "union"
+        ]
+      },
+      {
+        "id": "cap",
+        "code": "\\cap",
+        "glyph": "∩",
+        "name": "共通部分",
+        "aliases": [
+          "intersection"
+        ]
+      },
+      {
+        "id": "emptyset",
+        "code": "\\emptyset",
+        "glyph": "∅",
+        "name": "空集合",
+        "aliases": [
+          "empty set"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "arrows",
+    "title": "矢印",
+    "description": "対応や関係を示す矢印です。意味や使い分けは授業の定義に従ってください。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "leftarrow",
+        "code": "\\leftarrow",
+        "glyph": "←",
+        "name": "左矢印",
+        "aliases": [
+          "left arrow"
+        ]
+      },
+      {
+        "id": "rightarrow",
+        "code": "\\rightarrow",
+        "glyph": "→",
+        "name": "右矢印",
+        "aliases": [
+          "right arrow"
+        ]
+      },
+      {
+        "id": "leftrightarrow",
+        "code": "\\leftrightarrow",
+        "glyph": "↔",
+        "name": "左右矢印",
+        "aliases": [
+          "left right arrow"
+        ]
+      },
+      {
+        "id": "double-leftarrow",
+        "code": "\\Leftarrow",
+        "glyph": "⇐",
+        "name": "左二重矢印",
+        "aliases": [
+          "left double arrow"
+        ]
+      },
+      {
+        "id": "double-rightarrow",
+        "code": "\\Rightarrow",
+        "glyph": "⇒",
+        "name": "右二重矢印",
+        "aliases": [
+          "right double arrow"
+        ]
+      },
+      {
+        "id": "double-leftrightarrow",
+        "code": "\\Leftrightarrow",
+        "glyph": "⇔",
+        "name": "左右二重矢印",
+        "aliases": [
+          "double arrow"
+        ]
+      },
+      {
+        "id": "mapsto",
+        "code": "\\mapsto",
+        "glyph": "↦",
+        "name": "写像の対応",
+        "aliases": [
+          "maps to"
+        ]
+      },
+      {
+        "id": "uparrow",
+        "code": "\\uparrow",
+        "glyph": "↑",
+        "name": "上矢印",
+        "aliases": [
+          "up arrow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-symbols",
+    "title": "その他の基本記号",
+    "description": "解析・論理・演算で使う基本的な記号です。",
+    "referenceIds": [
+      "overleaf-symbols",
+      "katex-functions"
+    ],
+    "entries": [
+      {
+        "id": "infty",
+        "code": "\\infty",
+        "glyph": "∞",
+        "name": "無限大",
+        "aliases": [
+          "infinity"
+        ]
+      },
+      {
+        "id": "partial",
+        "code": "\\partial",
+        "glyph": "∂",
+        "name": "偏微分",
+        "aliases": [
+          "partial"
+        ]
+      },
+      {
+        "id": "nabla",
+        "code": "\\nabla",
+        "glyph": "∇",
+        "name": "ナブラ",
+        "aliases": [
+          "nabla"
+        ]
+      },
+      {
+        "id": "forall",
+        "code": "\\forall",
+        "glyph": "∀",
+        "name": "すべての",
+        "aliases": [
+          "for all"
+        ]
+      },
+      {
+        "id": "exists",
+        "code": "\\exists",
+        "glyph": "∃",
+        "name": "存在する",
+        "aliases": [
+          "exists"
+        ]
+      },
+      {
+        "id": "times",
+        "code": "\\times",
+        "glyph": "×",
+        "name": "乗算・積",
+        "aliases": [
+          "times"
+        ]
+      },
+      {
+        "id": "cdot",
+        "code": "\\cdot",
+        "glyph": "⋅",
+        "name": "中点・積",
+        "aliases": [
+          "dot"
+        ]
+      },
+      {
+        "id": "pm",
+        "code": "\\pm",
+        "glyph": "±",
+        "name": "プラスマイナス",
+        "aliases": [
+          "plus minus"
+        ]
+      }
+    ]
+  }
+]

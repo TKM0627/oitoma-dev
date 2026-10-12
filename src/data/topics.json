@@ -1,0 +1,1548 @@
+[
+  {
+    "id": "math-inline",
+    "title": "文中の数式",
+    "summary": "文章の途中に短い数式を入れる。数式は本文と同じ行に並びます。",
+    "category": "math",
+    "tags": [
+      "数式"
+    ],
+    "aliases": [
+      "inline math",
+      "インライン数式",
+      "ドル記号"
+    ],
+    "symptoms": [
+      "文章中に式を入れたい"
+    ],
+    "commands": [
+      "$",
+      "\\("
+    ],
+    "examples": [
+      {
+        "label": "文中に書く",
+        "code": "The value is $x+1$.",
+        "explanation": "本文中で使用。$を左右に一つずつ置きます。\\(x+1\\) も使えます。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "subscript"
+    ],
+    "errorCaseIds": [
+      "math-delimiters"
+    ],
+    "referenceIds": [
+      "overleaf-math"
+    ]
+  },
+  {
+    "id": "math-display",
+    "title": "独立した数式",
+    "summary": "数式を独立した行に表示する。式番号が不要なときは角括弧の区切りを使います。",
+    "category": "math",
+    "tags": [
+      "数式"
+    ],
+    "aliases": [
+      "display math",
+      "別行立て",
+      "ディスプレイ数式"
+    ],
+    "symptoms": [
+      "数式を中央に置きたい"
+    ],
+    "commands": [
+      "\\[",
+      "\\]"
+    ],
+    "examples": [
+      {
+        "label": "独立した行に書く",
+        "code": "\\[\nx^2 + y^2 = 1\n\\]",
+        "explanation": "本文中で使用。既に数式モードの場所には入れません。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "fraction"
+    ],
+    "errorCaseIds": [
+      "math-delimiters"
+    ],
+    "referenceIds": [
+      "overleaf-math"
+    ]
+  },
+  {
+    "id": "math-subscript",
+    "title": "下付き文字",
+    "summary": "変数に添字を付ける。複数文字の添字は波括弧でまとめます。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "添字"
+    ],
+    "aliases": [
+      "subscript",
+      "アンダースコア",
+      "下添字"
+    ],
+    "symptoms": [
+      "Missing $ inserted",
+      "添字でエラー",
+      "添字を小さくしたい"
+    ],
+    "commands": [
+      "_"
+    ],
+    "examples": [
+      {
+        "label": "複数文字の添字",
+        "code": "$x_{ij}$",
+        "explanation": "x_ijではiだけが添字になります。ij全体を{}で囲みます。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "subscript"
+    ],
+    "errorCaseIds": [
+      "outside-math-subscript"
+    ],
+    "referenceIds": [
+      "overleaf-scripts"
+    ]
+  },
+  {
+    "id": "math-superscript",
+    "title": "上付き文字・べき乗",
+    "summary": "指数や上添字を付ける。指数全体を波括弧で囲むと範囲が明確になります。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "添字"
+    ],
+    "aliases": [
+      "superscript",
+      "累乗",
+      "べき",
+      "キャレット"
+    ],
+    "symptoms": [
+      "Missing $ inserted",
+      "指数の一部だけ小さくなる"
+    ],
+    "commands": [
+      "^"
+    ],
+    "examples": [
+      {
+        "label": "指数をまとめる",
+        "code": "$x^{n+1}$",
+        "explanation": "本文中で使用。x^n+1では+1が指数に入りません。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "superscript"
+    ],
+    "errorCaseIds": [
+      "outside-math-superscript"
+    ],
+    "referenceIds": [
+      "overleaf-scripts"
+    ]
+  },
+  {
+    "id": "math-fraction",
+    "title": "分数",
+    "summary": "分子と分母を上下に並べる。二つの引数をそれぞれ波括弧で囲みます。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "分数"
+    ],
+    "aliases": [
+      "fraction",
+      "割り算",
+      "ぶんすう"
+    ],
+    "symptoms": [
+      "分子と分母を縦に並べたい"
+    ],
+    "commands": [
+      "\\frac",
+      "\\dfrac",
+      "\\tfrac"
+    ],
+    "examples": [
+      {
+        "label": "分数を書く",
+        "code": "$\\frac{a+1}{b}$",
+        "explanation": "本文中で使用。\\frac{a+1}だけでは分母が不足します。\\dfracにはamsmathが必要です。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "fraction"
+    ],
+    "errorCaseIds": [
+      "unbalanced-brace"
+    ],
+    "referenceIds": [
+      "overleaf-fractions"
+    ]
+  },
+  {
+    "id": "math-root",
+    "title": "平方根・n乗根",
+    "summary": "根号を付ける。n乗根の次数は角括弧で指定します。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "根号"
+    ],
+    "aliases": [
+      "square root",
+      "ルート",
+      "sqrt"
+    ],
+    "symptoms": [
+      "ルートの範囲を広げたい"
+    ],
+    "commands": [
+      "\\sqrt"
+    ],
+    "examples": [
+      {
+        "label": "3乗根",
+        "code": "$\\sqrt[3]{x+1}$",
+        "explanation": "本文中で使用。根号の中身は{}、次数は[]で囲みます。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "root"
+    ],
+    "errorCaseIds": [
+      "unbalanced-brace"
+    ],
+    "referenceIds": [
+      "overleaf-math"
+    ]
+  },
+  {
+    "id": "math-sum",
+    "title": "総和",
+    "summary": "シグマ記号と和の範囲を書く。下限は下付き、上限は上付きで指定します。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "演算"
+    ],
+    "aliases": [
+      "summation",
+      "シグマ",
+      "合計"
+    ],
+    "symptoms": [
+      "和の上下に範囲を付けたい"
+    ],
+    "commands": [
+      "\\sum"
+    ],
+    "examples": [
+      {
+        "label": "有限和",
+        "code": "\\[\\sum_{k=1}^{n} k\\]",
+        "explanation": "本文中で使用。文中数式では範囲の表示位置が変わります。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "sum"
+    ],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-scripts"
+    ]
+  },
+  {
+    "id": "math-integral",
+    "title": "積分",
+    "summary": "積分記号と上下限を書く。微分のdは立体にし、直前に小さな空白を入れます。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "演算"
+    ],
+    "aliases": [
+      "integral",
+      "定積分",
+      "不定積分"
+    ],
+    "symptoms": [
+      "積分の範囲を付けたい"
+    ],
+    "commands": [
+      "\\int"
+    ],
+    "examples": [
+      {
+        "label": "定積分",
+        "code": "\\[\\int_{0}^{1} x^2\\,\\mathrm{d}x\\]",
+        "explanation": "本文中で使用。\\,は小さな空白、\\mathrm{d}は立体のdです。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "integral"
+    ],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-scripts"
+    ]
+  },
+  {
+    "id": "math-matrix",
+    "title": "行列",
+    "summary": "要素を行と列に並べる。列は&、行は二つのバックスラッシュで区切ります。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "行列"
+    ],
+    "aliases": [
+      "matrix",
+      "pmatrix",
+      "bmatrix",
+      "vmatrix",
+      "丸括弧行列"
+    ],
+    "symptoms": [
+      "行列の括弧を変えたい",
+      "行列がずれる"
+    ],
+    "commands": [
+      "\\begin{pmatrix}",
+      "\\begin{bmatrix}",
+      "\\begin{vmatrix}"
+    ],
+    "examples": [
+      {
+        "label": "2×2行列",
+        "code": "\\[\n\\begin{pmatrix}\n1 & 2 \\\\\n3 & 4\n\\end{pmatrix}\n\\]",
+        "explanation": "本文中で使用。amsmathをプリアンブルで読み込みます。beginとendの環境名を一致させます。"
+      }
+    ],
+    "requiredPackages": [
+      "amsmath"
+    ],
+    "recipeIds": [
+      "matrix"
+    ],
+    "errorCaseIds": [
+      "environment-mismatch"
+    ],
+    "referenceIds": [
+      "overleaf-matrix"
+    ]
+  },
+  {
+    "id": "math-cases",
+    "title": "場合分け",
+    "summary": "左側の大きな波括弧と条件を並べる。値と条件の間は&で揃えます。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "複数行"
+    ],
+    "aliases": [
+      "cases",
+      "区分関数",
+      "条件分岐"
+    ],
+    "symptoms": [
+      "条件ごとに式を書きたい"
+    ],
+    "commands": [
+      "\\begin{cases}"
+    ],
+    "examples": [
+      {
+        "label": "絶対値の定義",
+        "code": "\\[\nf(x)=\\begin{cases}\nx & x \\geq 0 \\\\\n-x & x < 0\n\\end{cases}\n\\]",
+        "explanation": "本文中で使用。casesだけで数式モードに入るわけではありません。"
+      }
+    ],
+    "requiredPackages": [
+      "amsmath"
+    ],
+    "recipeIds": [
+      "cases"
+    ],
+    "errorCaseIds": [
+      "environment-mismatch"
+    ],
+    "referenceIds": [
+      "overleaf-aligned"
+    ]
+  },
+  {
+    "id": "math-aligned",
+    "title": "複数行の数式を揃える",
+    "summary": "等号などの位置を揃える。alignedを数式モードの中に置きます。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "複数行"
+    ],
+    "aliases": [
+      "aligned",
+      "align",
+      "連立方程式"
+    ],
+    "symptoms": [
+      "等号を揃えたい",
+      "数式を改行したい"
+    ],
+    "commands": [
+      "\\begin{aligned}",
+      "\\begin{align}"
+    ],
+    "examples": [
+      {
+        "label": "等号で揃える",
+        "code": "\\[\n\\begin{aligned}\nx+y &= 3 \\\\\nx-y &= 1\n\\end{aligned}\n\\]",
+        "explanation": "本文中で使用。alignedは数式モード内、alignは単独で使います。両者を混同しないでください。"
+      }
+    ],
+    "requiredPackages": [
+      "amsmath"
+    ],
+    "recipeIds": [
+      "aligned"
+    ],
+    "errorCaseIds": [
+      "environment-mismatch"
+    ],
+    "referenceIds": [
+      "overleaf-aligned"
+    ]
+  },
+  {
+    "id": "math-greek",
+    "title": "ギリシャ文字・数式記号",
+    "summary": "アルファ、ベータなどの文字や比較記号をコマンドで記述します。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "記号"
+    ],
+    "aliases": [
+      "greek",
+      "alpha",
+      "beta",
+      "アルファ",
+      "ベータ",
+      "不等号",
+      "α",
+      "β",
+      "ガンマ",
+      "gamma",
+      "γ",
+      "デルタ",
+      "delta",
+      "δ",
+      "イプシロン",
+      "epsilon",
+      "エプシロン",
+      "ϵ",
+      "ゼータ",
+      "zeta",
+      "ζ",
+      "イータ",
+      "eta",
+      "η",
+      "シータ",
+      "theta",
+      "テータ",
+      "θ",
+      "イオタ",
+      "iota",
+      "イオータ",
+      "ι",
+      "カッパ",
+      "kappa",
+      "κ",
+      "ラムダ",
+      "lambda",
+      "λ",
+      "ミュー",
+      "mu",
+      "μ",
+      "ニュー",
+      "nu",
+      "ν",
+      "クサイ",
+      "xi",
+      "クシー",
+      "ξ",
+      "オミクロン",
+      "omicron",
+      "パイ",
+      "pi",
+      "π",
+      "ロー",
+      "rho",
+      "ρ",
+      "シグマ",
+      "sigma",
+      "σ",
+      "タウ",
+      "tau",
+      "τ",
+      "ウプシロン",
+      "upsilon",
+      "ユプシロン",
+      "υ",
+      "ファイ",
+      "phi",
+      "フィー",
+      "ϕ",
+      "カイ",
+      "chi",
+      "キー",
+      "χ",
+      "プサイ",
+      "psi",
+      "プシー",
+      "ψ",
+      "オメガ",
+      "omega",
+      "ω",
+      "ガンマ（大文字）",
+      "Gamma",
+      "Γ",
+      "デルタ（大文字）",
+      "Delta",
+      "Δ",
+      "シータ（大文字）",
+      "Theta",
+      "Θ",
+      "ラムダ（大文字）",
+      "Lambda",
+      "Λ",
+      "クサイ（大文字）",
+      "Xi",
+      "Ξ",
+      "パイ（大文字）",
+      "Pi",
+      "Π",
+      "シグマ（大文字）",
+      "Sigma",
+      "Σ",
+      "ウプシロン（大文字）",
+      "Upsilon",
+      "Υ",
+      "ファイ（大文字）",
+      "Phi",
+      "Φ",
+      "プサイ（大文字）",
+      "Psi",
+      "Ψ",
+      "オメガ（大文字）",
+      "Omega",
+      "Ω",
+      "アルファ（大文字）",
+      "ベータ（大文字）",
+      "イプシロン（大文字）",
+      "ゼータ（大文字）",
+      "イータ（大文字）",
+      "イオタ（大文字）",
+      "カッパ（大文字）",
+      "ミュー（大文字）",
+      "ニュー（大文字）",
+      "オミクロン（大文字）",
+      "ロー（大文字）",
+      "タウ（大文字）",
+      "カイ（大文字）",
+      "イプシロン（別字形）",
+      "ε",
+      "シータ（別字形）",
+      "ϑ",
+      "パイ（別字形）",
+      "ϖ",
+      "ロー（別字形）",
+      "ϱ",
+      "シグマ（別字形）",
+      "ς",
+      "ファイ（別字形）",
+      "φ",
+      "等しい",
+      "equal",
+      "より小さい",
+      "less",
+      "より大きい",
+      "greater",
+      "以下",
+      "less equal",
+      "≤",
+      "以上",
+      "greater equal",
+      "≥",
+      "等しくない",
+      "not equal",
+      "≠",
+      "およそ等しい",
+      "approximately",
+      "≈",
+      "恒等・合同",
+      "equivalent",
+      "≡",
+      "属する",
+      "belongs",
+      "∈",
+      "属さない",
+      "not belongs",
+      "∉",
+      "含まれる",
+      "subset",
+      "⊂",
+      "含まれる（等号付き）",
+      "subset equal",
+      "⊆",
+      "含む",
+      "superset",
+      "⊃",
+      "和集合",
+      "union",
+      "∪",
+      "共通部分",
+      "intersection",
+      "∩",
+      "空集合",
+      "empty set",
+      "∅",
+      "左矢印",
+      "left arrow",
+      "←",
+      "右矢印",
+      "right arrow",
+      "→",
+      "左右矢印",
+      "left right arrow",
+      "↔",
+      "左二重矢印",
+      "left double arrow",
+      "⇐",
+      "右二重矢印",
+      "right double arrow",
+      "⇒",
+      "左右二重矢印",
+      "double arrow",
+      "⇔",
+      "写像の対応",
+      "maps to",
+      "↦",
+      "上矢印",
+      "up arrow",
+      "↑",
+      "無限大",
+      "infinity",
+      "∞",
+      "偏微分",
+      "partial",
+      "∂",
+      "ナブラ",
+      "nabla",
+      "∇",
+      "すべての",
+      "for all",
+      "∀",
+      "存在する",
+      "exists",
+      "∃",
+      "乗算・積",
+      "times",
+      "×",
+      "中点・積",
+      "dot",
+      "⋅",
+      "プラスマイナス",
+      "plus minus",
+      "±"
+    ],
+    "symptoms": [
+      "ギリシャ文字を入れたい"
+    ],
+    "commands": [
+      "\\alpha",
+      "\\beta",
+      "\\gamma",
+      "\\delta",
+      "\\epsilon",
+      "\\zeta",
+      "\\eta",
+      "\\theta",
+      "\\iota",
+      "\\kappa",
+      "\\lambda",
+      "\\mu",
+      "\\nu",
+      "\\xi",
+      "\\pi",
+      "\\rho",
+      "\\sigma",
+      "\\tau",
+      "\\upsilon",
+      "\\phi",
+      "\\chi",
+      "\\psi",
+      "\\omega",
+      "\\Gamma",
+      "\\Delta",
+      "\\Theta",
+      "\\Lambda",
+      "\\Xi",
+      "\\Pi",
+      "\\Sigma",
+      "\\Upsilon",
+      "\\Phi",
+      "\\Psi",
+      "\\Omega",
+      "\\varepsilon",
+      "\\vartheta",
+      "\\varpi",
+      "\\varrho",
+      "\\varsigma",
+      "\\varphi",
+      "\\leq",
+      "\\geq",
+      "\\neq",
+      "\\approx",
+      "\\equiv",
+      "\\in",
+      "\\notin",
+      "\\subset",
+      "\\subseteq",
+      "\\supset",
+      "\\cup",
+      "\\cap",
+      "\\emptyset",
+      "\\leftarrow",
+      "\\rightarrow",
+      "\\leftrightarrow",
+      "\\Leftarrow",
+      "\\Rightarrow",
+      "\\Leftrightarrow",
+      "\\mapsto",
+      "\\uparrow",
+      "\\infty",
+      "\\partial",
+      "\\nabla",
+      "\\forall",
+      "\\exists",
+      "\\times",
+      "\\cdot",
+      "\\pm"
+    ],
+    "examples": [
+      {
+        "label": "ギリシャ文字と比較",
+        "code": "$\\alpha \\leq \\beta$",
+        "explanation": "本文中で使用。Γ は \\Gamma と書きます。大文字のコマンド・ラテン文字で代用する文字・別字形の使い分けは、下の一覧で確認できます。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "symbols"
+    ],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "katex-functions",
+      "overleaf-symbols"
+    ]
+  },
+  {
+    "id": "math-brackets",
+    "title": "式に合わせた括弧",
+    "summary": "分数などに合わせて括弧を大きくする。leftとrightを対で使います。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "記号"
+    ],
+    "aliases": [
+      "delimiters",
+      "parentheses",
+      "かっこ"
+    ],
+    "symptoms": [
+      "括弧が小さい",
+      "Missing \\right inserted"
+    ],
+    "commands": [
+      "\\left",
+      "\\right"
+    ],
+    "examples": [
+      {
+        "label": "分数を囲む",
+        "code": "$\\left(\\frac{a}{b}\\right)$",
+        "explanation": "本文中で使用。片側を見せない場合は\\right.のように点を使います。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "fraction"
+    ],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-brackets",
+      "katex-functions"
+    ]
+  },
+  {
+    "id": "math-operators",
+    "title": "関数名を立体にする",
+    "summary": "sin、logなどの関数名を数式用の演算子として書きます。",
+    "category": "math",
+    "tags": [
+      "数式",
+      "演算"
+    ],
+    "aliases": [
+      "operators",
+      "三角関数",
+      "対数"
+    ],
+    "symptoms": [
+      "sinが斜体になる"
+    ],
+    "commands": [
+      "\\sin",
+      "\\log",
+      "\\operatorname"
+    ],
+    "examples": [
+      {
+        "label": "標準の関数名",
+        "code": "$\\sin x + \\log x$",
+        "explanation": "本文中で使用。独自の関数名はamsmathの\\operatorname{rank}などを使います。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-operators",
+      "amsmath-guide",
+      "katex-functions"
+    ]
+  },
+  {
+    "id": "math-spacing",
+    "title": "数式の空白",
+    "summary": "数式内では普通の空白文字が無視されます。必要な空きは専用コマンドで調整します。",
+    "category": "math",
+    "tags": [
+      "数式"
+    ],
+    "aliases": [
+      "spacing",
+      "スペース",
+      "thin space"
+    ],
+    "symptoms": [
+      "空白を入れても変わらない"
+    ],
+    "commands": [
+      "\\,",
+      "\\quad",
+      "\\!"
+    ],
+    "examples": [
+      {
+        "label": "小さな空白",
+        "code": "$a\\,b \\quad c$",
+        "explanation": "本文中で使用。\\,は小さな空き、\\quadは大きな空きです。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "integral"
+    ],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-spacing",
+      "katex-functions"
+    ]
+  },
+  {
+    "id": "math-text",
+    "title": "数式の中の文章",
+    "summary": "数式中の短いラベルをtextで書く。英語の単語の空白と立体表示を保てます。",
+    "category": "math",
+    "tags": [
+      "数式"
+    ],
+    "aliases": [
+      "text in math",
+      "数式内テキスト"
+    ],
+    "symptoms": [
+      "数式の説明が斜体になる"
+    ],
+    "commands": [
+      "\\text"
+    ],
+    "examples": [
+      {
+        "label": "数式に条件ラベルを付ける",
+        "code": "$x>0 \\quad \\text{for all } x$",
+        "explanation": "本文中で使用。日本語の組版は使用するTeXエンジン・日本語設定に依存します。"
+      }
+    ],
+    "requiredPackages": [
+      "amsmath"
+    ],
+    "recipeIds": [
+      "cases"
+    ],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "amsmath-guide",
+      "katex-functions"
+    ]
+  },
+  {
+    "id": "table-basic",
+    "title": "表の行と列",
+    "summary": "tabularで列の配置を指定する。セルは&、行は二つのバックスラッシュで区切ります。",
+    "category": "table",
+    "tags": [
+      "表"
+    ],
+    "aliases": [
+      "table",
+      "tabular",
+      "セル"
+    ],
+    "symptoms": [
+      "表を作りたい",
+      "Extra alignment tab has been changed to \\cr"
+    ],
+    "commands": [
+      "\\begin{tabular}",
+      "&"
+    ],
+    "examples": [
+      {
+        "label": "左揃え・右揃えの2列",
+        "code": "\\begin{tabular}{lr}\nItem & Value \\\\\nA & 12\n\\end{tabular}",
+        "explanation": "本文中で使用。{lr}は2列の指定です。各行の&の数を列数に合わせます。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [
+      "environment-mismatch"
+    ],
+    "referenceIds": [
+      "overleaf-tables"
+    ]
+  },
+  {
+    "id": "table-rules",
+    "title": "表の横罫線",
+    "summary": "hlineで表に横線を引く。行の終わりを明示してから線を入れます。",
+    "category": "table",
+    "tags": [
+      "表"
+    ],
+    "aliases": [
+      "hline",
+      "罫線",
+      "横線"
+    ],
+    "symptoms": [
+      "Misplaced \\noalign",
+      "表に線を引きたい"
+    ],
+    "commands": [
+      "\\hline"
+    ],
+    "examples": [
+      {
+        "label": "上下に罫線",
+        "code": "\\begin{tabular}{lr}\n\\hline\nA & 12 \\\\\n\\hline\n\\end{tabular}",
+        "explanation": "本文中で使用。行末の改行記号なしで\\hlineを置くとエラーになることがあります。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-tables"
+    ]
+  },
+  {
+    "id": "figure-image",
+    "title": "画像を挿入する",
+    "summary": "graphicxのincludegraphicsで画像を入れる。画像ファイルは自分のTeXプロジェクトに用意します。",
+    "category": "figure",
+    "tags": [
+      "図"
+    ],
+    "aliases": [
+      "image",
+      "includegraphics",
+      "写真"
+    ],
+    "symptoms": [
+      "画像を入れたい",
+      "File not found"
+    ],
+    "commands": [
+      "\\includegraphics"
+    ],
+    "examples": [
+      {
+        "label": "本文幅の半分で表示",
+        "code": "\\includegraphics[width=0.5\\linewidth]{example-image.png}",
+        "explanation": "本文中で使用。プリアンブルに\\usepackage{graphicx}が必要です。ファイル名は実在するものに変えます。"
+      }
+    ],
+    "requiredPackages": [
+      "graphicx"
+    ],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-images"
+    ]
+  },
+  {
+    "id": "figure-float",
+    "title": "図とキャプション",
+    "summary": "figure環境で図と説明をまとめる。配置指定は希望であり、固定位置の保証ではありません。",
+    "category": "figure",
+    "tags": [
+      "図",
+      "参照"
+    ],
+    "aliases": [
+      "figure",
+      "float",
+      "caption",
+      "キャプション"
+    ],
+    "symptoms": [
+      "図が別の場所に移動する"
+    ],
+    "commands": [
+      "\\begin{figure}",
+      "\\caption"
+    ],
+    "examples": [
+      {
+        "label": "図番号と参照ラベル",
+        "code": "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=0.5\\linewidth]{example-image.png}\n\\caption{Example}\n\\label{fig:example}\n\\end{figure}",
+        "explanation": "本文中で使用。labelはcaptionの後に置きます。画像ファイルを用意してください。"
+      }
+    ],
+    "requiredPackages": [
+      "graphicx"
+    ],
+    "recipeIds": [],
+    "errorCaseIds": [
+      "environment-mismatch"
+    ],
+    "referenceIds": [
+      "overleaf-crossref",
+      "overleaf-images"
+    ]
+  },
+  {
+    "id": "layout-sections",
+    "title": "見出しと節",
+    "summary": "section、subsectionで文書を区切る。星付きの見出しは番号を付けません。",
+    "category": "layout",
+    "tags": [
+      "文書構造"
+    ],
+    "aliases": [
+      "section",
+      "見出し",
+      "章",
+      "節"
+    ],
+    "symptoms": [
+      "見出し番号を付けたい"
+    ],
+    "commands": [
+      "\\section",
+      "\\subsection"
+    ],
+    "examples": [
+      {
+        "label": "見出しを作る",
+        "code": "\\section{Introduction}\n\\subsection{Background}",
+        "explanation": "本文中で使用。\\chapterの利用可否は文書クラスに依存します。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [
+      "unbalanced-brace"
+    ],
+    "referenceIds": [
+      "overleaf-sections"
+    ]
+  },
+  {
+    "id": "layout-lists",
+    "title": "箇条書き・番号付きリスト",
+    "summary": "itemizeやenumerateの中でitemを使い、項目を並べます。",
+    "category": "layout",
+    "tags": [
+      "文書構造"
+    ],
+    "aliases": [
+      "list",
+      "itemize",
+      "enumerate",
+      "リスト"
+    ],
+    "symptoms": [
+      "Something's wrong--perhaps a missing \\item",
+      "箇条書きにしたい"
+    ],
+    "commands": [
+      "\\begin{itemize}",
+      "\\item"
+    ],
+    "examples": [
+      {
+        "label": "箇条書き",
+        "code": "\\begin{itemize}\n\\item First item\n\\item Second item\n\\end{itemize}",
+        "explanation": "本文中で使用。環境名をenumerateに変えると番号付きになります。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [
+      "environment-mismatch"
+    ],
+    "referenceIds": [
+      "overleaf-lists"
+    ]
+  },
+  {
+    "id": "layout-emphasis",
+    "title": "強調と太字",
+    "summary": "短い語句の強調をemph、太字をtextbfで指定します。",
+    "category": "layout",
+    "tags": [
+      "文書構造"
+    ],
+    "aliases": [
+      "bold",
+      "italic",
+      "emphasis",
+      "強調",
+      "太字"
+    ],
+    "symptoms": [
+      "文字を太くしたい"
+    ],
+    "commands": [
+      "\\emph",
+      "\\textbf"
+    ],
+    "examples": [
+      {
+        "label": "本文を強調",
+        "code": "\\emph{Important} and \\textbf{Result}",
+        "explanation": "本文中で使用。emphは文脈に応じて書体が変わります。日本語書体は文書設定に依存します。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [
+      "unbalanced-brace"
+    ],
+    "referenceIds": [
+      "overleaf-styling"
+    ]
+  },
+  {
+    "id": "layout-paragraph",
+    "title": "段落と改行",
+    "summary": "空行で新しい段落を始める。単なるソース上の改行は通常、段落の区切りになりません。",
+    "category": "layout",
+    "tags": [
+      "文書構造"
+    ],
+    "aliases": [
+      "paragraph",
+      "line break",
+      "空行",
+      "改行"
+    ],
+    "symptoms": [
+      "改行が反映されない",
+      "There's no line here to end"
+    ],
+    "commands": [
+      "\\par",
+      "\\newline"
+    ],
+    "examples": [
+      {
+        "label": "段落を分ける",
+        "code": "First paragraph.\n\nSecond paragraph.",
+        "explanation": "本文中で使用。段落間隔を作るために改行記号を連打せず、段落や文書設定を使います。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-lines"
+    ]
+  },
+  {
+    "id": "citation-reference",
+    "title": "図・式・節を参照する",
+    "summary": "labelで目印を付け、refで番号を参照する。番号はコンパイルで解決されます。",
+    "category": "citation",
+    "tags": [
+      "参照"
+    ],
+    "aliases": [
+      "cross reference",
+      "label",
+      "ref",
+      "相互参照"
+    ],
+    "symptoms": [
+      "参照が??になる",
+      "Reference undefined"
+    ],
+    "commands": [
+      "\\label",
+      "\\ref"
+    ],
+    "examples": [
+      {
+        "label": "節を参照",
+        "code": "\\section{Method}\\label{sec:method}\nSee Section~\\ref{sec:method}.",
+        "explanation": "本文中で使用。ラベル名を一致させます。更新後に複数回のコンパイルが必要な場合があります。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-crossref",
+      "overleaf-sections"
+    ]
+  },
+  {
+    "id": "citation-bibliography",
+    "title": "参考文献を引用する",
+    "summary": "citeで文献キーを引用する。BibTeXの場合は別のbibファイルと文献処理が必要です。",
+    "category": "citation",
+    "tags": [
+      "参照"
+    ],
+    "aliases": [
+      "bibliography",
+      "bibtex",
+      "citation",
+      "引用"
+    ],
+    "symptoms": [
+      "Citation undefined",
+      "引用が?になる"
+    ],
+    "commands": [
+      "\\cite",
+      "\\bibliography",
+      "\\bibliographystyle"
+    ],
+    "examples": [
+      {
+        "label": "BibTeXの文献引用",
+        "code": "See \\cite{sample2026}.\n\\bibliographystyle{plain}\n\\bibliography{references}",
+        "explanation": "本文中で使用。references.bibにsample2026を登録し、BibTeXを含む処理を行います。biblatexとは手順が異なります。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "overleaf-bib"
+    ]
+  },
+  {
+    "id": "error-braces",
+    "title": "波括弧の閉じ忘れ",
+    "summary": "引数やグループの開始と終了を揃える。表示用の波括弧はエスケープします。",
+    "category": "error",
+    "tags": [
+      "エラー",
+      "記号"
+    ],
+    "aliases": [
+      "brace",
+      "波括弧",
+      "中括弧"
+    ],
+    "symptoms": [
+      "Runaway argument",
+      "Extra }, or forgotten $",
+      "括弧を閉じ忘れた"
+    ],
+    "commands": [
+      "{",
+      "}",
+      "\\{"
+    ],
+    "examples": [
+      {
+        "label": "引数を閉じる",
+        "code": "\\textbf{Result}",
+        "explanation": "本文中で使用。表示用の波括弧は\\{と\\}です。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "fraction"
+    ],
+    "errorCaseIds": [
+      "unbalanced-brace"
+    ],
+    "referenceIds": [
+      "overleaf-commands",
+      "overleaf-brackets",
+      "overleaf-errors"
+    ]
+  },
+  {
+    "id": "error-environments",
+    "title": "beginとendを揃える",
+    "summary": "環境名と入れ子の順序を揃える。最後に開いた環境から順番に閉じます。",
+    "category": "error",
+    "tags": [
+      "エラー",
+      "文書構造"
+    ],
+    "aliases": [
+      "environment",
+      "begin",
+      "end",
+      "環境"
+    ],
+    "symptoms": [
+      "ended by",
+      "環境が閉じない"
+    ],
+    "commands": [
+      "\\begin",
+      "\\end"
+    ],
+    "examples": [
+      {
+        "label": "同じ環境名で閉じる",
+        "code": "\\begin{itemize}\n\\item Example\n\\end{itemize}",
+        "explanation": "本文中で使用。断片には環境の開始・終了が含まれないこともあるため、簡易診断は注意として扱います。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "matrix"
+    ],
+    "errorCaseIds": [
+      "environment-mismatch"
+    ],
+    "referenceIds": [
+      "overleaf-environments",
+      "overleaf-errors"
+    ]
+  },
+  {
+    "id": "error-math-mode",
+    "title": "数式モードの区切り",
+    "summary": "添字や数式記号は数式モードの中に置く。開始と終了の区切りを同じ種類で揃えます。",
+    "category": "error",
+    "tags": [
+      "エラー",
+      "数式"
+    ],
+    "aliases": [
+      "math mode",
+      "ドル",
+      "数式エラー"
+    ],
+    "symptoms": [
+      "Missing $ inserted",
+      "Bad math environment delimiter",
+      "数式でエラー"
+    ],
+    "commands": [
+      "$",
+      "\\(",
+      "\\)",
+      "\\[",
+      "\\]"
+    ],
+    "examples": [
+      {
+        "label": "添字を数式内に置く",
+        "code": "$x_1$",
+        "explanation": "本文中で使用。数式環境の中にさらに$を置くと区切りが混乱します。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [
+      "subscript"
+    ],
+    "errorCaseIds": [
+      "outside-math-subscript",
+      "outside-math-superscript",
+      "math-delimiters"
+    ],
+    "referenceIds": [
+      "overleaf-math",
+      "overleaf-errors"
+    ]
+  },
+  {
+    "id": "layout-special",
+    "title": "特殊文字をそのまま表示する",
+    "summary": "本文のアンダースコア、パーセント、アンパサンドなどはエスケープして表示します。",
+    "category": "layout",
+    "tags": [
+      "記号",
+      "文書構造"
+    ],
+    "aliases": [
+      "escape",
+      "特殊文字",
+      "パーセント"
+    ],
+    "symptoms": [
+      "パーセント以降が消える",
+      "ファイル名の_でエラー"
+    ],
+    "commands": [
+      "\\_",
+      "\\%",
+      "\\&",
+      "\\#"
+    ],
+    "examples": [
+      {
+        "label": "本文に特殊文字を表示",
+        "code": "file\\_name: 50\\% \\& more",
+        "explanation": "本文中で使用。%はコメント開始、&は整列位置を表すため、文字として表示するときはエスケープします。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [
+      "outside-math-subscript"
+    ],
+    "referenceIds": [
+      "overleaf-errors",
+      "overleaf-introduction"
+    ]
+  },
+  {
+    "id": "japanese-document",
+    "title": "日本語レポートの文書クラス",
+    "summary": "日本語を含む文書は、授業の指定を確認してクラスとエンジンを選びます。新規文書にはjlreqの例を用意しています。",
+    "category": "layout",
+    "tags": [
+      "日本語",
+      "文書構造"
+    ],
+    "aliases": [
+      "日本語対応",
+      "日本語レポート",
+      "jlreq",
+      "luatexja",
+      "文字化け"
+    ],
+    "symptoms": [
+      "日本語が出ない",
+      "日本語でレポートを書きたい"
+    ],
+    "commands": [
+      "\\documentclass"
+    ],
+    "examples": [
+      {
+        "label": "LuaLaTeX用の最小文書",
+        "code": "\\documentclass[lualatex]{jlreq}\n\\begin{document}\n日本語の本文です。\n\\end{document}",
+        "explanation": "UTF-8で保存し、LuaLaTeXでコンパイルします。文書クラスはパッケージとは別の指定です。アプリ内では文書全体をプレビューしません。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "jlreq-guide",
+      "overleaf-japanese"
+    ],
+    "guideId": "japanese"
+  },
+  {
+    "id": "japanese-engine",
+    "title": "日本語文書のエンジン選択",
+    "summary": "LuaLaTeXとupLaTeXは同じ設定では使えません。授業のテンプレートに合うエンジンとPDFへの変換方法を確認します。",
+    "category": "layout",
+    "tags": [
+      "日本語",
+      "文書構造",
+      "エラー"
+    ],
+    "aliases": [
+      "LuaLaTeX",
+      "upLaTeX",
+      "pLaTeX",
+      "コンパイラ",
+      "Overleaf 日本語",
+      "dvipdfmx"
+    ],
+    "symptoms": [
+      "Compilerを選びたい",
+      "日本語テンプレートでエラー",
+      "jlreqが動かない"
+    ],
+    "commands": [
+      "\\documentclass"
+    ],
+    "examples": [
+      {
+        "label": "upLaTeX用の最小文書",
+        "code": "\\documentclass[uplatex]{jlreq}\n\\begin{document}\n日本語の本文です。\n\\end{document}",
+        "explanation": "upLaTeXでDVIを作成し、dvipdfmxでPDFへ変換します。Overleafでの設定例は日本語スターターを参照してください。授業指定の設定を優先します。"
+      }
+    ],
+    "requiredPackages": [],
+    "recipeIds": [],
+    "errorCaseIds": [],
+    "referenceIds": [
+      "jlreq-guide",
+      "overleaf-japanese",
+      "overleaf-compiler"
+    ],
+    "guideId": "japanese"
+  }
+]

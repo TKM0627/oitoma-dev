@@ -1,0 +1,8 @@
+.formula-preview { border: 1px solid var(--border-strong); padding: 14px; margin-bottom: 16px; min-width: 0; }
+.preview-label { font-size: .85rem; color: var(--muted); }
+.formula-output { min-height: 140px; display: flex; align-items: center; justify-content: center; overflow: auto; padding: 12px 0; font-size: 1.15rem; }
+.formula-output .katex-display { margin: 0; }
+.formula-preview p { font-size: .8rem; color: var(--muted); margin-bottom: 0; }
+@media (max-width: 760px) {
+  .formula-output { min-height: 120px; }
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "setup",
+    "title": "環境の準備",
+    "summary": "大学のLinux／Emacsと、自前のWindows／TeX Liveで書き始める前に。",
+    "goals": ["エディタとTeXエンジンの役割を分けて考える", "授業の設定に合う日本語文書を選ぶ"],
+    "sections": [
+      {
+        "id": "university-linux",
+        "title": "大学PC：LinuxとEmacs",
+        "paragraphs": ["Emacsで.texファイルを編集・保存し、TeXエンジンでPDFを作ります。まず授業で配られたテンプレートを開き、指定された方法で一度コンパイルしてください。", "Emacs標準のTeXモードと、追加パッケージのAUCTeXでは操作が異なります。大学PCにどちらが入っているか、使うエンジンと実行方法を授業の案内で確認します。この資料では大学PCの設定を推測しません。"],
+        "examples": [],
+        "pitfalls": ["他の環境のショートカットや設定ファイルを、そのまま大学PCへ適用しない。"],
+        "referenceIds": ["emacs-tex-mode", "learnlatex-setup"]
+      },
+      {
+        "id": "personal-windows",
+        "title": "自前PC：WindowsとTeX Live",
+        "paragraphs": ["TeX Liveは組版に必要なプログラムやパッケージの集まりです。エディタを用意するだけではPDFを作れません。すでにTeX Liveが入っている場合は、授業の指定とエディタのエンジン設定を確認します。", ".texファイルはUTF-8で保存し、画像も同じ作業フォルダーにまとめると管理しやすくなります。コマンドが見つからない場合は、ソースの構文を直す前にTeX Liveの導入状況とPATHを確認します。"],
+        "examples": [{"label": "端末で実行する例：LuaLaTeX", "code": "lualatex main.tex", "placement": "main.texを保存したフォルダーの端末で実行します。", "requirements": ["LuaLaTeXが利用でき、main.texがLuaLaTeX用の文書である場合の例です。授業で別の方法が指定されていればそちらを使います。"]}],
+        "pitfalls": ["Windowsでは拡張子を確認し、main.tex.txtとして保存しない。", "共有の大学PCの設定変更や再インストールは、この資料の手順には含めない。"],
+        "referenceIds": ["texlive-guide", "learnlatex-setup", "learnlatex-errors"]
+      },
+      {
+        "id": "japanese-engine",
+        "title": "日本語文書とエンジンを合わせる",
+        "paragraphs": ["LuaLaTeX・pLaTeX・upLaTeXは、名前が似ていても同じ設定ではありません。授業指定のクラスとエンジンを先に確認します。指定がない場合に試す土台として、ここではjlreqとLuaLaTeXの短い例を示します。"],
+        "examples": [{"label": "main.tex：LuaLaTeX用の最小例", "code": "\\documentclass[lualatex]{jlreq}\n\n\\begin{document}\n\\section{目的}\n測定結果をまとめます。\n\\end{document}", "placement": "UTF-8のmain.texとして保存する文書全体です。", "requirements": ["LuaLaTeX、jlreq、LuaTeX-jaが利用できる環境で使用します。大学PCの既定設定を示す例ではありません。"]}],
+        "pitfalls": ["このLuaLaTeX用の例を、エンジンだけpLaTeX/upLaTeXへ切り替えて使わない。", "このアプリはTeXエンジンを実行しないため、PDF作成は自分の授業環境で確認する。"],
+        "referenceIds": ["jlreq-guide", "learnlatex-document"]
+      }
+    ],
+    "checklist": ["授業指定のテンプレート・エンジン・実行方法を確認した", ".texファイルをUTF-8で保存できる", "自分の環境でPDFと.logファイルを確認できる"],
+    "topicIds": ["japanese-document", "japanese-engine"], "recipeIds": [], "errorCaseIds": [], "guideId": "japanese",
+    "checkedAt": "2026-10-10", "status": "prototype", "verificationMethod": "source-comparison", "humanReview": "not-performed", "texCompilation": "not-performed"
+  },
+  {
+    "id": "math",
+    "title": "数式を書く",
+    "summary": "本文中の式、添字・分数、複数行の整列と行列。",
+    "goals": ["数式を置く場所に合う区切りを選ぶ", "添字や整列位置をコードで指定する"],
+    "sections": [
+      {
+        "id": "math-mode",
+        "title": "本文中の式と、独立した式",
+        "paragraphs": ["文の途中に置く式は\\(...\\)や$...$、独立した式は\\[...\\]で囲みます。本文と数式では文字や空白の扱いが異なります。開始と終了には同じ種類の区切りを使ってください。"],
+        "examples": [{"label": "文中の式と独立した式", "code": "速度を \\(v\\) とします。\n\\[\n  v = \\frac{d}{t}\n\\]", "placement": "\\begin{document}と\\end{document}の間の本文に置きます。", "requirements": ["追加パッケージは不要です。"]}],
+        "pitfalls": ["本文中に_や^をそのまま書くと、数式モードに関するエラーになることがある。", "数式環境の中に、別の数式区切りを重ねない。"],
+        "referenceIds": ["learnlatex-math"]
+      },
+      {
+        "id": "scripts-fractions",
+        "title": "添字と分数は、まとまりを囲む",
+        "paragraphs": ["下付きは_、上付きは^を使います。複数文字を付けるときは波括弧でまとめます。\\fracの2つの引数は、順に分子と分母です。"],
+        "examples": [{"label": "複数文字の添字と分数", "code": "\\[\n  a_{ij}^{2} = \\frac{p+q}{r}\n\\]", "placement": "本文に置く独立した数式です。", "requirements": ["追加パッケージは不要です。"]}],
+        "pitfalls": ["a_ijでは、下付きになるのは直後のiだけ。a_{ij}と書く。", "分母がr+sなら\\frac{p}{r+s}のように引数の中へ入れる。"],
+        "referenceIds": ["learnlatex-math", "overleaf-fractions"]
+      },
+      {
+        "id": "alignment-matrix",
+        "title": "等号を揃える・行列を並べる",
+        "paragraphs": ["alignedでは&で整列位置を指定し、2つのバックスラッシュで行を区切ります。alignedは数式モードの内側で使います。pmatrixでは&が列、2つのバックスラッシュが行の区切りです。"],
+        "examples": [
+          {"label": "等号を揃える例", "code": "\\[\n\\begin{aligned}\n  y &= 3x + 2 \\\\\n    &= 14\n\\end{aligned}\n\\]", "placement": "本文に置きます。この例ではx=4の場合の計算を示しています。", "requirements": ["プリアンブルに\\usepackage{amsmath}を記述します。"]},
+          {"label": "2行2列の行列", "code": "\\[\n\\begin{pmatrix}\n  1 & 2 \\\\\n  0 & 1\n\\end{pmatrix}\n\\]", "placement": "本文に置く独立した数式です。", "requirements": ["プリアンブルに\\usepackage{amsmath}を記述します。"]}
+        ],
+        "pitfalls": ["alignedやpmatrixを、数式モードの外で使わない。", "amsmathを読み込む行は、\\begin{document}より前に置く。"],
+        "referenceIds": ["amsmath-guide"]
+      }
+    ],
+    "checklist": ["本文と数式の区切りを分けた", "複数文字の添字を波括弧で囲んだ", "amsmathをプリアンブルで読み込んだ"],
+    "topicIds": ["math-inline", "math-display", "math-subscript", "math-fraction", "math-aligned", "math-matrix"], "recipeIds": ["subscript", "fraction", "aligned", "matrix"], "errorCaseIds": ["outside-math-subscript", "math-delimiters"],
+    "checkedAt": "2026-10-10", "status": "prototype", "verificationMethod": "source-comparison", "humanReview": "not-performed", "texCompilation": "not-performed"
+  },
+  {
+    "id": "figures-tables",
+    "title": "表・図を入れる",
+    "summary": "列と行を指定する表、画像の挿入、キャプションと配置。",
+    "goals": ["表の列と行の区切りを読み取る", "画像と説明をひとまとめにする"],
+    "sections": [
+      {
+        "id": "tabular",
+        "title": "小さな表を作る",
+        "paragraphs": ["tabularの列指定は、lが左揃え、cが中央揃え、rが右揃えです。列の間は&、行の終わりは2つのバックスラッシュで区切ります。下の例は見出しと2件の測定値を並べています。"],
+        "examples": [{"label": "2列の表", "code": "\\begin{tabular}{lr}\n  条件 & 時間（秒） \\\\\n  A & 12.4 \\\\\n  B & 15.8\n\\end{tabular}", "placement": "本文に置きます。表番号やキャプションは、この例には含めていません。", "requirements": ["追加パッケージは不要です。数値は書き方を示すための架空の測定値です。"]}],
+        "pitfalls": ["列数と&の数を合わせる。2列なら各行の&は1つ。", "表の中で&そのものを表示するときは\\&と書く。"],
+        "referenceIds": ["learnlatex-tables", "overleaf-tables"]
+      },
+      {
+        "id": "figure",
+        "title": "画像に説明と参照名を付ける",
+        "paragraphs": ["graphicxの\\includegraphicsで画像を読み込みます。figureで囲むと、LaTeXが紙面の空きに応じて位置を調整します。[htbp]は配置の候補を指定するもので、書いた場所への固定を保証しません。", "図の\\labelは\\captionより後ろに置きます。width=0.7\\linewidthは、利用できる行幅の7割を目安にする指定です。画像は自分で作成したものか、使用条件を確認したものを用意してください。"],
+        "examples": [{"label": "画像とキャプション", "code": "\\begin{figure}[htbp]\n  \\centering\n  \\includegraphics[width=0.7\\linewidth]{sample.png}\n  \\caption{測定装置の構成}\n  \\label{fig:apparatus}\n\\end{figure}", "placement": "本文に置きます。sample.pngを.texファイルと同じフォルダーに用意します。", "requirements": ["LuaLaTeXではプリアンブルに\\usepackage{graphicx}を記述します。", "pLaTeX/upLaTeXでdvipdfmxを使う場合は、例えば\\usepackage[dvipdfmx]{graphicx}とします。授業テンプレートに既存の指定がある場合はそれを優先します。"]}],
+        "pitfalls": ["画像ファイル名の大文字・小文字も合わせる。Linuxへ移すと、名前の違いで見つからないことがある。", "図の参照が??になった場合は、ラベル名と再コンパイルを確認する。"],
+        "referenceIds": ["learnlatex-graphics", "learnlatex-crossref", "overleaf-japanese"]
+      }
+    ],
+    "checklist": ["表の列数と各行の区切りを確認した", "画像ファイルの名前・場所・利用条件を確認した", "captionの後ろにlabelを置いた"],
+    "topicIds": ["table-basic", "table-rules", "figure-image", "figure-float", "citation-reference"], "recipeIds": [], "errorCaseIds": ["environment-mismatch"],
+    "checkedAt": "2026-10-10", "status": "prototype", "verificationMethod": "source-comparison", "humanReview": "not-performed", "texCompilation": "not-performed"
+  },
+  {
+    "id": "structure",
+    "title": "文書を組み立てる",
+    "summary": "プリアンブルと本文、節の見出し、箇条書きと段落。",
+    "goals": ["設定と本文を置く場所を分ける", "見た目ではなく文章の構造を指定する"],
+    "sections": [
+      {
+        "id": "headings",
+        "title": "設定は先に、見出しは本文に",
+        "paragraphs": ["\\documentclassから\\begin{document}までがプリアンブルです。文書クラスや\\usepackageなどの設定はここに置きます。本文は\\begin{document}と\\end{document}の間に書きます。", "節の見出しは\\section、その内側は\\subsectionを使います。レポートの構成は課題の指定に合わせてください。\\chapterが使えるかどうかは文書クラスによって異なります。"],
+        "examples": [{"label": "本文の見出しと段落", "code": "\\section{方法}\n測定条件を説明します。\n\n\\subsection{測定手順}\n一定の間隔で値を記録しました。", "placement": "文書の本文に置く断片です。課題の構成を定める例ではありません。", "requirements": ["通常は追加パッケージ不要です。授業指定の文書クラスを使います。"]}],
+        "pitfalls": ["見出しを大きな文字や空白だけで作ると、文書の構造や番号が管理しづらい。", "パッケージの読み込みを本文に入れない。"],
+        "referenceIds": ["learnlatex-document", "learnlatex-structure", "overleaf-sections"]
+      },
+      {
+        "id": "lists-paragraphs",
+        "title": "箇条書きと段落を使い分ける",
+        "paragraphs": ["順序のある手順にはenumerate、順序を付けない項目にはitemizeを使います。項目は\\itemで始めます。ソース上の空行は段落の区切りです。通常の段落を作るために、行末へ毎回2つのバックスラッシュを付ける必要はありません。"],
+        "examples": [{"label": "手順と、その後の段落", "code": "\\begin{enumerate}\n  \\item 装置を準備する。\n  \\item 測定値を記録する。\n\\end{enumerate}\n\n結果を次の節にまとめます。", "placement": "本文に置きます。順序が不要ならbegin/endの両方をitemizeに変えます。", "requirements": ["追加パッケージは不要です。"]}],
+        "pitfalls": ["beginとendで同じ環境名を使い、内側から閉じる。", "授業のテンプレートに余白や段落の指定がある場合は、その設定を優先する。"],
+        "referenceIds": ["learnlatex-structure", "overleaf-lists", "overleaf-lines"]
+      }
+    ],
+    "checklist": ["設定をプリアンブルに置いた", "見出しの階層をsection/subsectionで表した", "段落・箇条書き・改行の役割を分けた"],
+    "topicIds": ["layout-sections", "layout-lists", "layout-paragraph", "layout-emphasis"], "recipeIds": [], "errorCaseIds": ["environment-mismatch"], "guideId": "japanese",
+    "checkedAt": "2026-10-10", "status": "prototype", "verificationMethod": "source-comparison", "humanReview": "not-performed", "texCompilation": "not-performed"
+  },
+  {
+    "id": "references",
+    "title": "引用・参照を付ける",
+    "summary": "図表・節の番号参照と、文献の引用は別々の仕組み。",
+    "goals": ["label/refと文献の引用を区別する", "文献情報と授業の引用規則を確認する"],
+    "sections": [
+      {
+        "id": "cross-reference",
+        "title": "節や図表の番号を参照する",
+        "paragraphs": ["\\labelで番号に名前を付け、\\refでその番号を呼び出します。参照名は文書内で重複させません。節では見出しの後ろ、図表では\\captionの後ろに\\labelを置きます。", "初回のコンパイルでは参照が??になることがあります。ラベル名を確認し、もう一度コンパイルします。それでも直らない場合はログを調べてください。"],
+        "examples": [{"label": "節番号を参照する", "code": "\\section{結果}\n\\label{sec:result}\n測定結果を示します。\n\n第\\ref{sec:result}節の結果を比較します。", "placement": "本文に置きます。sec:は整理のための接頭辞で、特別な命令ではありません。", "requirements": ["追加パッケージは不要です。参照が解決するまで複数回のコンパイルが必要な場合があります。"]}],
+        "pitfalls": ["図番号を本文へ直接書くと、図の追加後に番号がずれる。", "labelの文字列を変えたら、対応するrefも同じ文字列へ変える。"],
+        "referenceIds": ["learnlatex-crossref"]
+      },
+      {
+        "id": "manual-bibliography",
+        "title": "小さな文献リストで引用の仕組みを知る",
+        "paragraphs": ["\\citeは文献を引用するための命令です。小さな例ではthebibliography内の\\bibitemと、同じキーで対応させられます。図表を参照する\\refとは用途が異なります。", "下の著者・題名は書き方を示す架空の情報です。提出時には実際に読んだ資料の書誌情報へ置き換え、引用箇所・ページ・書式を課題の指示に合わせてください。LaTeXの構文だけでは、引用の適切さは判定できません。"],
+        "examples": [{"label": "引用の書式例（文献は架空）", "code": "手順の記述例です\\cite{practice-note}。\n\n\\begin{thebibliography}{9}\n  \\bibitem{practice-note}\n  Example Author, Practice Notes, 2026.\n\\end{thebibliography}", "placement": "本文に置きます。thebibliographyは文献一覧を表示したい場所に置きます。", "requirements": ["追加パッケージは不要です。授業のテンプレートが別の文献管理方式を指定する場合は、その方式を使います。"]}],
+        "pitfalls": ["生成された文献の書式を、授業の引用規則に適合した証拠として扱わない。", "架空の例を、実際の出典として提出しない。"],
+        "referenceIds": ["overleaf-bib"]
+      },
+      {
+        "id": "bib-database",
+        "title": "文献が増えたら.bibファイルへ",
+        "paragraphs": ["文献情報を.bibファイルにまとめると、同じ情報を再利用しやすくなります。BibTeX・pBibTeX・Biberなどの処理は、授業のテンプレートや利用するパッケージに合わせます。日本語を含む文献の扱いも確認してください。"],
+        "examples": [{"label": ".bibファイルの書式例（文献は架空）", "code": "@book{practice-note,\n  author = {Example Author},\n  title  = {Practice Notes},\n  year   = {2026}\n}", "placement": "例：references.bibという別ファイルに保存するデータです。本文へ貼り付けません。", "requirements": ["このデータだけでは文献一覧は生成されません。文書側の指定と文献処理プログラムの実行が必要です。"]}],
+        "pitfalls": [".bibを追加しただけで引用が解決するとは限らない。授業で指定された文献処理と再コンパイルを行う。"],
+        "referenceIds": ["learnlatex-bibliography"]
+      }
+    ],
+    "checklist": ["label/refとciteを使い分けた", "引用キーの綴りと、参照する文献情報を確認した", "授業の引用規則と必要な文献処理を確認した"],
+    "topicIds": ["citation-reference", "citation-bibliography"], "recipeIds": [], "errorCaseIds": [],
+    "checkedAt": "2026-10-10", "status": "prototype", "verificationMethod": "source-comparison", "humanReview": "not-performed", "texCompilation": "not-performed"
+  },
+  {
+    "id": "errors",
+    "title": "エラーを読み解く",
+    "summary": "ログを読む順番と、数式区切り・括弧・環境の確認。",
+    "goals": ["ログにある手掛かりから修正箇所を探す", "このアプリで診断できる範囲を知る"],
+    "sections": [
+      {
+        "id": "read-log",
+        "title": "最初のエラーと、その前後を見る",
+        "paragraphs": ["コンパイルが止まったら.logファイルやエディタのログ表示を開きます。!から始まるメッセージと、l.に続く行番号、その周辺のソースを確認します。報告された行が、原因そのものの場所とは限りません。", "command not foundや「コマンドとして認識されません」は、TeXの構文より先に実行環境を確認する手掛かりです。TeX Liveが利用可能か、実行するプログラムの名前が合っているかを調べます。"],
+        "examples": [],
+        "pitfalls": ["最後に出たエラーだけを見ず、先に発生したエラーから少しずつ修正する。", "不明なままパッケージや学内設定をまとめて変更しない。"],
+        "referenceIds": ["learnlatex-errors", "texlive-guide"]
+      },
+      {
+        "id": "math-delimiters",
+        "title": "Missing $ inserted：まず数式の区切りを確認",
+        "paragraphs": ["本文に数式用の_や^がある場合は、式を数式モードで囲みます。ただしMissing $ insertedには他の原因もあり、このメッセージだけで原因を断定できません。前後の区切りや環境も確認してください。"],
+        "examples": [
+          {"label": "修正前：数式として書きたい場合", "code": "x_1", "placement": "数式モードの外に書いた断片です。", "requirements": ["誤りの説明用です。このまま本文に貼り付けないでください。"]},
+          {"label": "修正例：文中の数式", "code": "\\(x_1\\)", "placement": "本文に置きます。", "requirements": ["追加パッケージは不要です。"]}
+        ],
+        "pitfalls": ["本文のファイル名などで_を文字として見せたい場合は、\\_と書く。", "\\(で始めた式を\\]で閉じない。"],
+        "referenceIds": ["learnlatex-math", "overleaf-errors"]
+      },
+      {
+        "id": "braces-environments",
+        "title": "括弧とbegin/endを対応させる",
+        "paragraphs": ["引数の{と}、環境の\\beginと\\endを対応させます。環境を入れ子にした場合は、内側から閉じます。修正後は元の環境でコンパイルし、次のエラーが残っていないか確認してください。", "このアプリの「直す」は5つの基本規則を確認します。未定義コマンド、画像の存在、文献処理、独自マクロなどは完全には調べられません。指摘がなくても、文書全体のコンパイル成功を保証しません。"],
+        "examples": [{"label": "括弧と環境が対応した断片", "code": "\\begin{itemize}\n  \\item \\textbf{測定結果}を確認する。\n\\end{itemize}", "placement": "本文に置きます。begin/endの名前と、textbfの波括弧を確認します。", "requirements": ["追加パッケージは不要です。"]}],
+        "pitfalls": ["文章中の%以降はコメントになるため、閉じる括弧などを意図せず隠していないか確認する。", "質問するときは、非公開情報を除いた小さな例とエラーメッセージを準備する。"],
+        "referenceIds": ["learnlatex-errors", "overleaf-environments", "overleaf-commands"]
+      }
+    ],
+    "checklist": ["ログの最初のエラーと、その前後を読んだ", "数式の区切り・波括弧・環境名を確認した", "元のTeX環境で再コンパイルして確認した"],
+    "topicIds": ["error-math-mode", "error-braces", "error-environments", "layout-special"], "recipeIds": [], "errorCaseIds": ["outside-math-subscript", "math-delimiters", "unbalanced-brace", "environment-mismatch"],
+    "checkedAt": "2026-10-10", "status": "prototype", "verificationMethod": "source-comparison", "humanReview": "not-performed", "texCompilation": "not-performed"
+  }
+]

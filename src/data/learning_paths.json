@@ -1,0 +1,32 @@
+[
+  {
+    "id": "report", "title": "日本語レポートを始める", "description": "日本語の設定、見出し、引用の順に、提出前の基礎を確認します。",
+    "steps": [
+      {"id": "setup", "title": "日本語の文書とエンジンを揃える", "description": "授業の指定を確認し、スターターで文書の土台を用意します。", "target": {"kind": "guide", "id": "japanese"}},
+      {"id": "sections", "title": "見出しで論点を整理する", "description": "sectionとsubsectionで、目的・内容・考察を分けます。", "target": {"kind": "topic", "id": "layout-sections"}},
+      {"id": "references", "title": "図表を番号で参照する", "description": "caption・label・refの関係を確認します。", "target": {"kind": "topic", "id": "citation-reference"}},
+      {"id": "citations", "title": "引用元を明示する", "description": "参考文献の例を読み、授業の引用規則に合わせて記載します。", "target": {"kind": "topic", "id": "citation-bibliography"}}
+    ],
+    "quiz": {"question": "新規文書で、このアプリのLuaLaTeX用スターターを選んだとき、OverleafのCompilerは？", "choices": [{"id": "lua", "text": "LuaLaTeX"}, {"id": "pdf", "text": "pdfLaTeXのまま"}, {"id": "any", "text": "どれでも同じ"}], "answerId": "lua", "explanation": "このスターターはjlreqのlualatexオプションを使用します。CompilerもLuaLaTeXに揃えます。授業のテンプレートが別のエンジンを指定する場合は、その指定に従います。", "referenceIds": ["jlreq-guide", "overleaf-compiler"]}
+  },
+  {
+    "id": "math", "title": "数式の書き方を身につける", "description": "数式モードから始め、添字・分数・複数行の式を操作します。",
+    "steps": [
+      {"id": "mode", "title": "本文と数式モードを分ける", "description": "$…$と独立した数式の置き方を確認します。", "target": {"kind": "topic", "id": "math-inline"}},
+      {"id": "scripts", "title": "複数文字の添字を試す", "description": "選択肢を変え、波括弧が付くコードを見比べます。", "target": {"kind": "recipe", "id": "subscript"}},
+      {"id": "fraction", "title": "分数を組み立てる", "description": "分子と分母を選び、表示とコードを比べます。", "target": {"kind": "recipe", "id": "fraction"}},
+      {"id": "aligned", "title": "等号を揃える", "description": "&の位置と改行を確認し、生成コードを診断へ渡します。", "target": {"kind": "recipe", "id": "aligned"}}
+    ],
+    "quiz": {"question": "数式の中で、iとjの両方をxの下付き文字にする書き方は？", "choices": [{"id": "group", "text": "x_{ij}"}, {"id": "single", "text": "x_ij"}, {"id": "upper", "text": "x^{ij}"}], "answerId": "group", "explanation": "複数文字の添字は波括弧でまとめます。x_ijでは直後のiだけが下付きになり、^は上付きの指定です。", "referenceIds": ["overleaf-scripts"]}
+  },
+  {
+    "id": "lab", "title": "実験の結果を伝える", "description": "表・図・数式を、読み手がたどれる形でレポートにまとめます。",
+    "steps": [
+      {"id": "structure", "title": "実験レポートの土台を用意する", "description": "スターターで実験用の構成を選び、授業の書式と比較します。", "target": {"kind": "guide", "id": "japanese"}},
+      {"id": "table", "title": "測定値を表にする", "description": "列指定・&・行末の改行の関係を確認します。", "target": {"kind": "topic", "id": "table-basic"}},
+      {"id": "figure", "title": "図に説明と参照を付ける", "description": "画像パスとcaption・labelの位置を確認します。", "target": {"kind": "topic", "id": "figure-float"}},
+      {"id": "equations", "title": "計算式の並びを揃える", "description": "alignedを試し、考察で使う式の構造を確認します。", "target": {"kind": "recipe", "id": "aligned"}}
+    ],
+    "quiz": {"question": "図表の番号をlabelで参照するとき、番号を正しく対応させる基本的な順序は？", "choices": [{"id": "after", "text": "captionの後にlabelを置く"}, {"id": "before", "text": "captionの前にlabelを置く"}, {"id": "none", "text": "labelだけ置けばよい"}], "answerId": "after", "explanation": "captionが図表の番号を更新するので、labelはその後に置きます。参照が??なら再コンパイルし、名前の一致も確認します。", "referenceIds": ["overleaf-crossref"]}
+  }
+]
