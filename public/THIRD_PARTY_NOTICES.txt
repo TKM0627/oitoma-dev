@@ -1,4 +1,4 @@
-LaTeX Navigator - Third-party notices
+TeX Navigator - Third-party notices
 
 Installed runtime dependencies and their notices.
 Versions correspond to package-lock.json at 2026-10-10.

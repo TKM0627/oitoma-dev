@@ -14,13 +14,13 @@ export function AppShell() {
     main?.focus({ preventScroll: true });
     window.scrollTo(0, 0);
     const heading = main?.querySelector('h1')?.textContent;
-    document.title = `${heading || 'LaTeX'} | LaTeX Navigator`;
+    document.title = heading ? `${heading} | TeX Navigator` : 'TeX Navigator';
   }, [pathname]);
   return <>
     <a href="#main-content" className="skip-link" onClick={(event) => { event.preventDefault(); document.getElementById('main-content')?.focus(); window.scrollTo(0, 0); }}>本文へ移動</a>
     <header className="site-header">
       <div className="header-inner">
-        <Link to="/search" className="brand" aria-label="LaTeX Navigator ホーム">LaTeX Navigator</Link>
+        <Link to="/search" className="brand" aria-label="TeX Navigator ホーム">TeX Navigator</Link>
         <nav aria-label="メインナビゲーション">
           <NavLink to="/search" className={mode === 'search' && pathname !== '/help' ? 'active' : ''} aria-current={mode === 'search' && pathname !== '/help' ? 'true' : undefined}>探す</NavLink>
           <NavLink to="/recipes" className={mode === 'try' ? 'active' : ''} aria-current={mode === 'try' ? 'true' : undefined}>試す</NavLink>
